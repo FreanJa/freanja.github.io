@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>FreanJa&#39;s Blog</title>
+    <link>https://github.com/FreanJa/freanja.github.io/</link>
+    <description>Recent content on FreanJa&#39;s Blog</description>
+    <image>
+      <url>https://github.com/levi.jpeg</url>
+      <link>https://github.com/levi.jpeg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Sep 2021 16:56:33 +0800</lastBuildDate><atom:link href="https://github.com/FreanJa/freanja.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;核心编程</title>
+      <link>https://github.com/FreanJa/freanja.github.io/post/blog/</link>
+      <pubDate>Mon, 20 Sep 2021 16:56:33 +0800</pubDate>
+      
+      <guid>https://github.com/FreanJa/freanja.github.io/post/blog/</guid>
+      <description>本阶段主要针对C++==面向对象==编程技术做详细讲解，探讨C++中的核心和精髓。
+1 内存分区模型 C++程序在执行时，将内存大方向划分为4个区域
+ 代码区：存放函数体的二进制代码，由操作系统进行管理的 全局区：存放全局变量和静态变量以及常量 栈区：由编译器自动分配释放, 存放函数的参数值,局部变量等 堆区：由程序员分配和释放,若程序员不释放,程序结束时由操作系统回收  内存四区意义：
+不同区域存放的数据，赋予不同的生命周期, 给我们更大的灵活编程
+1.1 程序运行前 在程序编译后，生成了exe可执行程序，*未执行该程序前*分为两个区域 *代码区：* 存放 CPU 执行的机器指令 代码区是*共享*的，共享的目的是对于频繁被执行的程序，只需要在内存中有一份代码即可 代码区是*只读*的，使其只读的原因是防止程序意外地修改了它的指令 *全局区：* 全局变量和静态变量存放在此. 全局区还包含了常量区, 字符串常量和其他常量也存放在此. ==该区域的数据在程序结束后由操作系统释放==.  示例：
+//全局变量 int g_a = 10; int g_b = 10; //全局常量 const int c_g_a = 10; const int c_g_b = 10; int main() { //局部变量 	int a = 10; int b = 10; //打印地址 	cout &amp;lt;&amp;lt; &amp;#34;局部变量a地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;a &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;局部变量b地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;b &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;全局变量g_a地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;g_a &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;全局变量g_b地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;g_b &amp;lt;&amp;lt; endl; //静态变量 	static int s_a = 10; static int s_b = 10; cout &amp;lt;&amp;lt; &amp;#34;静态变量s_a地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;s_a &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;静态变量s_b地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;s_b &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;字符串常量地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;&amp;#34;hello world&amp;#34; &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;字符串常量地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;&amp;#34;hello world1&amp;#34; &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;全局常量c_g_a地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;c_g_a &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;全局常量c_g_b地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;c_g_b &amp;lt;&amp;lt; endl; const int c_l_a = 10; const int c_l_b = 10; cout &amp;lt;&amp;lt; &amp;#34;局部常量c_l_a地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;c_l_a &amp;lt;&amp;lt; endl; cout &amp;lt;&amp;lt; &amp;#34;局部常量c_l_b地址为： &amp;#34; &amp;lt;&amp;lt; (int)&amp;amp;c_l_b &amp;lt;&amp;lt; endl; system(&amp;#34;pause&amp;#34;); return 0; } 打印结果：</description>
+    </item>
+    
+    <item>
+      <title>CN knowledge combing</title>
+      <link>https://github.com/FreanJa/freanja.github.io/post/2021-07-02/</link>
+      <pubDate>Fri, 02 Jul 2021 00:15:17 +0800</pubDate>
+      
+      <guid>https://github.com/FreanJa/freanja.github.io/post/2021-07-02/</guid>
+      <description>Chap 1 Introduction   What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?  ANS There is no difference. Throughout this text, the words “host” and “end system” are used interchangeably. End systems include PCs, workstations, Web servers, mail servers, PDAs, Internet-connected game consoles, etc.
+ 没有区别。在本文中，“主机”和“终端系统”这两个词是互换使用的。 终端系统包括pc机、工作站、Web服务器、邮件服务器、pda、联网游戏机等。 Web服务器也是终端系统   Describe the protocol that might be used by two people having a telephonic conversation to initiate and end the conversation.</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>

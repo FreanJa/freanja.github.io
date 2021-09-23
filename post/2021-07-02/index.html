@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>CN knowledge combing | FreanJa&#39;s Blog</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Chap 1 Introduction   What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?  ANS There is no difference. Throughout this text, the words “host” and “end system” are used interchangeably. End systems include PCs, workstations, Web servers, mail servers, PDAs, Internet-connected game consoles, etc.
+ 没有区别。在本文中，“主机”和“终端系统”这两个词是互换使用的。 终端系统包括pc机、工作站、Web服务器、邮件服务器、pda、联网游戏机等。 Web服务器也是终端系统   Describe the protocol that might be used by two people having a telephonic conversation to initiate and end the conversation.">
+<meta name="author" content="Me">
+<link rel="canonical" href="https://github.com/FreanJa/freanja.github.io/post/2021-07-02/" />
+<link crossorigin="anonymous" href="/FreanJa/freanja.github.io/assets/css/stylesheet.min.b4f41e8115821784b756edfd28d8497a95b480a414695c43ba128f9296a762df.css" integrity="sha256-tPQegRWCF4S3Vu39KNhJepW0gKQUaVxDuhKPkpanYt8=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/apple-touch-icon.png" as="image">
+<script defer crossorigin="anonymous" src="/FreanJa/freanja.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://github.com/FreanJa/freanja.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.com/FreanJa/freanja.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.com/FreanJa/freanja.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://github.com/FreanJa/freanja.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://github.com/FreanJa/freanja.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.88.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="CN knowledge combing" />
+<meta property="og:description" content="Chap 1 Introduction   What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?  ANS There is no difference. Throughout this text, the words “host” and “end system” are used interchangeably. End systems include PCs, workstations, Web servers, mail servers, PDAs, Internet-connected game consoles, etc.
+ 没有区别。在本文中，“主机”和“终端系统”这两个词是互换使用的。 终端系统包括pc机、工作站、Web服务器、邮件服务器、pda、联网游戏机等。 Web服务器也是终端系统   Describe the protocol that might be used by two people having a telephonic conversation to initiate and end the conversation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://github.com/FreanJa/freanja.github.io/post/2021-07-02/" /><meta property="og:image" content="https://github.com/levi.jpeg"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-07-02T00:15:17&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-02T00:15:17&#43;08:00" /><meta property="og:site_name" content="ExampleSite" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://github.com/levi.jpeg"/>
+
+<meta name="twitter:title" content="CN knowledge combing"/>
+<meta name="twitter:description" content="Chap 1 Introduction   What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?  ANS There is no difference. Throughout this text, the words “host” and “end system” are used interchangeably. End systems include PCs, workstations, Web servers, mail servers, PDAs, Internet-connected game consoles, etc.
+ 没有区别。在本文中，“主机”和“终端系统”这两个词是互换使用的。 终端系统包括pc机、工作站、Web服务器、邮件服务器、pda、联网游戏机等。 Web服务器也是终端系统   Describe the protocol that might be used by two people having a telephonic conversation to initiate and end the conversation."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://github.com/FreanJa/freanja.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "CN knowledge combing",
+      "item": "https://github.com/FreanJa/freanja.github.io/post/2021-07-02/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "CN knowledge combing",
+  "name": "CN knowledge combing",
+  "description": "Chap 1 Introduction   What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?  ANS There is no difference. Throughout this text, the words “host” and “end system” are used interchangeably. End systems include PCs, workstations, Web servers, mail servers, PDAs, Internet-connected game consoles, etc.\n 没有区别。在本文中，“主机”和“终端系统”这两个词是互换使用的。 终端系统包括pc机、工作站、Web服务器、邮件服务器、pda、联网游戏机等。 Web服务器也是终端系统   Describe the protocol that might be used by two people having a telephonic conversation to initiate and end the conversation.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Chap 1 Introduction   What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?  ANS There is no difference. Throughout this text, the words “host” and “end system” are used interchangeably. End systems include PCs, workstations, Web servers, mail servers, PDAs, Internet-connected game consoles, etc.\n 没有区别。在本文中，“主机”和“终端系统”这两个词是互换使用的。 终端系统包括pc机、工作站、Web服务器、邮件服务器、pda、联网游戏机等。 Web服务器也是终端系统   Describe the protocol that might be used by two people having a telephonic conversation to initiate and end the conversation.  ANS Based on the human protocol, in order to generate a telephonic conversation. When a caller initiates a call, and after the callee accepts the call, the caller commences the communication by using specific messages (e.g., Allo (a message transmitting to, and received by the callee)), and after receiving feedback from the callee (e.g., Hello (transmitting an implicit message to the caller)). Then, they both keep the communication on based specific sent messages (transmitting messages from caller to callee and vice versa), and specific received response messages (transmitting a replay to caller or callee). After finishing the talk, one of the involved parts could end up the call by using some key works (e.g., I have to go now, goodbye) and they both end up the call by hanging up the phones.\n发起方： Hello；接收方回复\t–— 开始对话 双方交换信息 某一方提出结束，另一方接收到这个信息\t—- 结束通话\n Why are standards important for protocols?  ANS Standards are important for protocols so that people can create networking systems and products that interoperate. 标准对于协议很重要，这样人们就可以创建能够互操作的网络系统和产品。 （有统一的标准，就可以协同工作）\n Consider sending a packet from a source host to a destination host over a fixed route. List the delay components in the end-to-end delay. Which of these delays are constant and which are variable?  ANS The delay components are processing delays, transmission delays, propagation delays, and queuing delays. All of these delays are fixed, except for the queuing delays, which are variable. 延迟组件是处理延迟、传输延迟、传播延迟和排队延迟。所有这些延迟都是固定的，除了 ~排队延迟是可变~ 的。\n A user can directly connect to a server through either long-range wireless or a twisted-pair cable for transmitting a 1500-bytes file. The transmission rates of the wireless and wired media are 2 and 100 Mbps, respectively. Assume that the propagation speed in air is 3 * 108 m/s, while the speed in the twisted pair is 2 * 108 m/s. If the user is located 1 km away from the server, what is the nodal delay when using each of the two technologies?  ANS transmission delay + propagation delay dTrans = L/R\tdProp = d/s\n Suppose Host A wants to send a large file to Host B. The path from Host A to Host B has three links, of rates R1 = 500 kbps, R2 = 2 Mbps, and R3 = 1 Mbps.  Assuming no other traffic in the network, what is the throughput for the file transfer? Suppose the file is 4 million bytes. Dividing the file size by the through- put, roughly how long will it take to transfer the file to Host B? Repeat (a) and (b), but now with R2 reduced to 100 kbps.    ANS * 500 kbps （ determined by minimum rata ) * 64 seconds ( 4 * 106 * 8 / 0.5 * 106 ) * 100kbps; 320 seconds ( choose 100kbps )\n Suppose end system A wants to send a large file to end system B. At a very high level, describe how end system A creates packets from the file. When one of these packets arrives to a router, what information in the packet does the router use to determine the link onto which the packet is forwarded? Why is packet switching in the Internet analogous to driving from one city to another and asking directions along the way? 假设端系统A想向端系统B发送一个大文件。  在一个非常高的级别上，描述端系统A如何从该文件创建数据包。 当其中一个数据包到达路由器时，路由器使用数据包中的什么信息来确定数据包所转发到的链路? 为什么因特网上的分组交换类似于开车从一个城市到另一个城市，并在途中问路?    ANS End system A breaks the large file into chunks. It adds header to each chunk, thereby generating multiple packets from the file. The header in each packet includes the IP address of the destination (end system B). The packet switch uses the destination IP address in the packet to determine the outgoing link. Asking which road to take is analogous to a packet asking which outgoing link it should be forwarded on, given the packet’s destination address. 终端系统A将大文件分成若干块。它向每个块添加头，从而从文件生成多个包。每个包的报头包括目的(端系统B)的IP地址。 包交换机根据包中的目的IP地址来确定出路。 询问要走哪条路类似于信息包在给定数据包的目的地址的情况下询问它应该沿着哪条输出链路转发。\n If two end-systems are connected through multiple routers and the datalink level between them ensures reliable data delivery, is a transport protocol offering reliable data delivery between these two end-systems necessary? Why? 如果两个终端系统通过多个路由器连接，并且它们之间的数据链路层确保了可靠的数据传递，那么在这两个终端系统之间提供可靠的数据传递的传输协议是必要的吗?为什么?  ANS A reliable data link protocol can recover from errors affecting transmissions on individual links. However, there are more sources of losses in an interconnection network formed by multiple routers. For instance, messages can be dropped by a router whose buffer is completely filled with packets. Moreover, a router may malfunction or break, thus destroying all buffered messages. Thus, it makes more sense to use a transport protocol for reliable data delivery in the considered scenario. 一个可靠的数据链路协议可以从影响单个链路传输的错误中恢复。 然而，在由多个路由器组成的互连网络中，有更多的损耗来源。例如，报文可以被路由器的缓冲区完全填满。此外，路由器可能发生故障或中断，从而破坏所有缓冲的消息。因此，在考虑的场景中使用传输协议进行可靠的数据传递更有意义。\n What are the five layers in the Internet protocol stack? What are the principal responsibilities of each of these layers?  ANS * Application layer: Implement a specific network application through the interaction between application processes 通过应用进程间的交互来完成特定网络应用 * Transport layer: Provides a common data transfer service for communication between processes in two hosts 为两个主机中进程之间的通信提供通用的数据传输服务 * Network layer:Communication services are provided by different hosts on a packet switched network 分组交换网上不同主机提供通信服务 * Link layer:On-link transmission between two adjacent nodes 两个相邻节点间的链路上传送问题 * Physical layer:Transmits bitstreams transparently 透明地传送比特流\n What do encapsulation and de-encapsulation mean? Why are they needed in a layered protocol stack? 封装和反封装是什么意思?为什么在分层协议栈中需要它们?  ANS Encapsulation is the process of passing a packet from a higher layer to a lower layer. In the simplest case, it simply appends additional information (i.e., a header) to the source packet. In more complicated scenarios, the original packet can be split into multiple packets, each carrying its own header. 封装是将一个数据包从较高的层传递到较低的层的过程。在最简单的情况下，它只是将附加信息(例如，一个头)附加到源包。在更复杂的情况下，原始数据包可以被拆分为多个数据包，每个数据包携带自己的报头。 Decapsulation is the opposite process of encapsulation. It extracts the header from a source packet from a lower layer and passes the payload to the higher layer. If lower layer packets are part of a sequence, the corresponding payloads are put together before they are passed to the higher layer. 解封装是封装的相反过程。它从较低一层的源包中提取报头，并将有效负载传递给较高一层。如果较低层的数据包是序列的一部分，相应的有效负载在传递到较高层之前被放在一起。 Each protocol in a layer of a protocol stack relies on the services of the lower layers but not on their information. Thus, the information a protocol needs to process a packet should entirely be contained in the header of that protocol. Encapsulation and decapsulation are flexible mechanisms to allow each protocol to operate independently from others while being able to interface with each other. 协议栈一层中的每个协议依赖于较低层的服务，而不是它们的信息。因此,协议需要处理数据包的信息应该完全包含在该协议的报头中。封装和解封装是一种灵活的机制，允许每个协议独立地操作，同时能够相互接口。\n Which layers in the Internet protocol stack does a router process? Which layers does a link-layer switch process? Which layers does a host process? 路由器处理因特网协议栈的哪一层?链路层交换处理哪些层?宿主进程要处理哪些层?  ANS Routers process network, link and physical layers (layers 1 through 3). Link layer switches process link and physical layers (layers 1 through2). Hosts process all five layers.\n Chap 2 Application Layer   A user requests a Web page that consists of some text and three images. For this page, the client will send one request message and receive four response messages. 用户请求一个由一些文本和三个图像组成的Web页面。对于这个页面，客户机将发送一条请求消息，并接收四条响应消息。  False request - response 需一一对应\n Two distinct Web pages (for example, www.mit.edu/research.html and www.mit.edu/students.html) can be sent over the same persistent connection. 两个不同的Web页面(例如 www.mit.edu/research.html和www.mit.edu/students.html)可以通过同一个持久连接发送。  True 同一个域名对应同一台服务器，已经建立了TCP连接，可以传输多个object\n With non-persistent connections between browser and origin server, it is possible for a single TCP segment to carry two distinct HTTP request messages. 在浏览器和源服务器之间的非持久连接中，单个TCP段可以携带两个不同的HTTP请求消息。  False 非持续连接中，一个object — 一个TCP连接\n The Date: header in the HTTP response message indicates when the object in the response was last modified. HTTP响应消息中的Date: 标头表示响应中的对象最后一次修改的时间。  False Last modified Date: 报文创建时间\n HTTP response messages never have an empty message body. HTTP响应消息不会有空消息体。  False 204 No Content\n The Last-Modified: header in the HTTP response message indicate when the object in the response was last modified  True\n With persistent connections between browser and origin server, it is possible for a single TCP segment (or packet) to carry two distinct HTTP request messages?  True\n List five non-proprietary Internet applications and the application-layer protocols that they use.  The Web: HTTP; file transfer: FTP; remote login: Telnet; e-mail: SMTP; BitTorrent file sharing: BitTorrent protocol\n What is the difference between network architecture and application architecture?  Network architecture refers to the organization of the communication process into layers (e.g., the five-layer Internet architecture). 网络体系结构是指将通信过程组织成层(如五层Internet体系结构)。 Application architecture, on the other hand, is designed by an application developer and dictates the broad structure of the application (e.g., client-server or P2P). 应用程序架构是由应用程序开发人员设计的，它规定了应用程序的总体结构(例如，客户机-服务器或P2P)。\n For a communication session between a pair of processes, which process is the client and which is the server?  The process which initiates the communication is the client; the process that waits to be contacted is the server. 发起通信的过程是客户端;等待联系的进程是服务器。\n Why are the terms client and server still used in peer-to-peer applications?  In a P2P file-sharing application, the peer that is receiving a file is typically the client and the peer that is sending the file is typically the server. 在P2P文件共享应用程序中，接收文件的对等体通常是客户端，发送文件的对等体通常是服务器。\n What information is used by a process running on one host to identify a process running on another host?  The IP address of the destination host and the port number of the socket in the destination process. 目的主机的IP地址和目的进程中套接字的端口号。 destination host’s IP address \u0026 port number of the socket\n What is the role of HTTP in a network application? What other components are needed to complete a Web application?  Establish the connection between client and server for data transmission 建立客户端和服务器的连接，进行数据传输\n Referring to Figure 2.4, we see that none of the applications listed in Figure 2.4 requires both no data loss and timing. Can you conceive of an application that requires no data loss and that is also highly time-sensitive?  One such example is remote word processing, for example, with Google docs. However, because Google docs runs over the Internet (using TCP), timing guarantees are not provided.\n List the four broad classes of services that a transport protocol can provide. For each of the service classes, indicate if either UDP or TCP (or both) provides such a service.  a) Reliable data transfer TCP provides a reliable byte-stream between client and server but UDP does not. b) A guarantee that a certain value for throughput will be maintained Neither c) A guarantee that data will be delivered within a specified amount of time Neither d) Confidentiality (via encryption) Neither\n1.可靠的数据传输；2.保持一定吞吐量；3.保证一定时间内交付；4.机密性\n What is meant by a handshaking protocol?  A protocol uses handshaking if the two communicating entities first exchange control packets before sending data to each other. SMTP uses handshaking at the application layer whereas HTTP does not. 如果两个通信实体在互相发送数据之前先交换控制数据包，那么协议使用握手。SMTP在应用层使用握手，而HTTP不使用。\n What does a stateless protocol mean? Is IMAP stateless? What about SMTP?  IMAP无状态 SMTP有状态\n How can websites keep track of users? Do they always need to use cookies? 网站如何跟踪用户?他们总是需要使用cookie吗?  IP地址； HTTP Referrer； Cookies；User agent\n Describe how Web caching can reduce the delay in receiving a requested object. Will Web caching reduce the delay for all objects requested by a user or for only some of the objects? Why? 描述Web缓存如何减少接收请求对象时的延迟。Web缓存是否减少了用户请求的所有对象的延迟，还是只减少了部分对象的延迟?为什么?  Web caching can bring the desired content “closer” to the user, possibly to the same LAN to which the user’s host is connected. Web caching can reduce the delay for all objects, even objects that are not cached, since caching reduces the traffic on links. Web缓存可以使所需内容“更接近”用户，可能与用户的主机所连接的同一局域网。Web缓存可以减少所有对象的延迟，甚至是未缓存的对象，因为缓存减少了链接上的流量。\n Telnet into a Web server and send a multiline request message. Include in the request message the If-modified-since: header line to force a response message with the 304 Not Modified status code. Telnet到Web服务器并发送多行请求消息。在请求消息中包含If-modified-since:标题行，以强制使用304 Not Modified状态码的响应消息。   Are there any constraints on the format of the HTTP body? What about the email message body sent with SMTP? How can arbitrary data be transmitted over SMTP?  对HTTP正文格式的约束 是的，在HTTP正文的格式上存在协议约束。协议约束用于防止缓冲区溢出之类的攻击。缓冲区溢出可能发生在web应用程序和服务器中，这些应用程序和服务器没有将HTTP协议的元素限制在可接受的长度内，或者错误地处理了格式不正确的请求。这样的错误会导致安全性问题\n Web Page A Web page(also called a document) consists of objects. Web页面(也称为文档)由对象组成。\nObject An object is simply a file—such as an HTML file, a JPEG image, a Java applet, or a video clip—that is addressable by a single URL. 对象只是一个文件，例如HTML文件、JPEG图像、Java applet或视频剪辑，可以通过单个URL寻址。\nURL Uniform Resource Locator 统一资源定位器\nWeb browser / client Web servers / server HTTP HyperText Transfer Protocol 超文本传输协议\nRequest message Response message TCP HTTP uses TCP as its underlying transport protocol (rather than running on top of UDP). 传输控制协议 Transmission Control Protocol 是一种面向连接的、可靠的、基于字节流的传输层通信协议\nStateless protocol Because an HTTP server maintains no information about the clients, HTTP is said to be a stateless protocol. 因为HTTP服务器不维护关于客户端的信息，所以HTTP被称为无状态协议。\nPersistent connection all of the requests and their corresponding responses be sent over the sameTCP connection 通过相同的TCP连接发送所有的请求及其相应的响应\nNon-Persistent connection each request/response pair be sent over a separateTCP connection 通过单独的TCP连接发送每个请求/响应对\nround trip time (RTT) which is the time it takes for a small packet to travel from client to server and then back to the client. 从请求到接收到文件的总时间\ndnodal = dproc + dqueue + dtrans + dprop packet-propagation delay (包传递 到下个节点 §d: length of physical link §s: propagation speed (~2x108 m/sec) dprop = d/s\npacket-queueing delay (包排队 packet-processing delay (包处理 packet-transmission delay (包传输 节点内 §L: packet length (bits) §R: link transmission rate (bps) dtrans = L/R\nChap 3   Host A is sending Host B a large file over a TCP connection. Assume Host B has no data to send Host A. Host B will not send acknowledgments to Host A because Host B cannot piggyback the acknowledgments on data.  False TCP是可靠传输 一定会有确认信息\n The size of the TCP rwnd never changes throughout the duration of the connection.  False rwnd = RcvBuffer - [LastByteRcvd - LastByteRead]. rwnd表示的是接收窗口的大小, 这取决于接收方应用程序从缓存中读取数据的速率和发送方发送的速率, 是会变化的.\n Suppose Host A is sending Host B a large file over a TCP connection. The number of unacknowledged bytes that A sends cannot exceed the size of the receive buffer.  True\n Suppose Host A is sending a large file to Host B over a TCP connection. If the sequence number for a segment of this connection is m, then the sequence number for the subsequent segment will necessarily be m + 1. 如果这个连接的一个段的序列号是m，那么后续的段的序列号必然是m + 1。  False 序号是根据TCP数据的字节流决定的, 而不是建立在报文序列之上. 后继报文段的序号应该是m + n, 而n是最大报文段长度.\n The TCP segment has a field in its header for rwnd.  True\n Suppose that the last SampleRTT in a TCP connection is equal to 1 sec. The current value of TimeoutInterval for the connection will necessarily be ≥ 1 sec.  False EstimatedRTT = (1-a)EstimatedRTT +aSampleRTT TimeoutInterval = EstimatedRTT + 4*DevRTT\n Suppose Host A sends one segment with sequence number 38 and 4 bytes of data over a TCP connection to Host B. In this same segment the acknowledgment number is necessarily 42.  False acknowledgment number 是 A expecting from B\n Before sending a packet into a datagram network, the source must determine all of the links that packet will traverse between source and destination.  False\n How is a UDP socket fully identified? What about a TCP socket? What is the difference between the full identification of both sockets?   Describe why an application developer might choose to run an application over UDP rather than TCP.  An application developer may not want its application to use TCP’s congestion control, which can throttle the application’s sending rate at times of congestion. Often, designers of IP telephony and IP videoconference applications choose to run their applications over UDP because they want to avoid TCP’s congestion control. Also, some applications do not need the reliable data transfer provided by TCP. 应用程序开发人员可能不希望其应用程序使用TCP的拥塞控制，这可能会在拥塞时抑制应用程序的发送速率。通常，IP电话和IP视频会议应用程序的设计者选择在UDP上运行他们的应用程序，因为他们想避免TCP的拥塞控制。另外，有些应用程序不需要TCP提供的可靠数据传输。\n Why is it that voice and video traffic is often sent over TCP rather than UDP in today’s Internet? (Hint: The answer we are looking for has nothing to do with TCP’s congestion-control mechanism.)  Since most firewalls are configured to block UDP traffic, using TCP for video and voice traffic lets the traffic though the firewalls. 由于大多数防火墙配置为阻断UDP流量，因此使用TCP来处理视频和语音流量可以让流量通过防火墙。\n Is it possible for an application to enjoy reliable data transfer even when the application runs over UDP? If so, how?  Yes. The application developer can put reliable data transfer into the application layer protocol. This would require a significant amount of work and debugging, however. 是的。应用程序开发人员可以将可靠的数据传输放到应用层协议中。然而，这将需要大量的工作和调试。\n Suppose a process in Host C has a UDP socket with port number 6789. Suppose both Host A and Host B each send a UDP segment to Host C with destination port number 6789. Will both of these segments be directed to the same socket at Host C? If so, how will the process at Host C know that these two segments originated from two different hosts?  Yes, both segments will be directed to the same socket. For each received segment, at the socket interface, the operating system will provide the process with the IP addresses to determine the origins of the individual segments. 是的，两个段将被定向到同一个套接字。对于每个接收到的段，在套接字接口上，操作系统将向进程提供IP地址，以确定各个段的起源。\n Suppose that a Web server runs in Host C on port 80. Suppose this Web server uses persistent connections, and is currently receiving requests from two different Hosts, A and B. Are all of the requests being sent through the same socket at Host C? If they are being passed through different sockets, do both of the sockets have port 80? Discuss and explain.  For each persistent connection, the Web server creates a separate “connection socket”. Each connection socket is identified with a four-tuple: (source IP address, source port number, destination IP address, destination port number). When host C receives and IP datagram, it examines these four fields in the datagram/segment to determine to which socket it should pass the payload of the TCP segment. Thus, the requests from A and B pass through different sockets. The identifier for both of these sockets has 80 for the destination port; however, the identifiers for these sockets have different values for source IP addresses. Unlike UDP, when the transport layer passes a TCP segment’s payload to the application process, it does not specify the source IP address, as this is implicitly specified by the socket identifier. 对于每个持久连接，Web服务器创建一个单独的“连接套接字”。每个连接套接字用一个四元组(源IP地址、源端口号、目的IP地址、目的端口号)来标识。当主机C接收到IP数据报时，它检查数据报/段中的这四个字段，以确定应该将TCP段的有效负载传递给哪个套接字。因此，来自A和B的请求通过不同的套接字。这两个套接字的标识符的目的端口都是80;但是，这些套接字的标识符对于源IP地址有不同的值。与UDP不同，当传输层将TCP段的有效负载传递给应用程序进程时，它不指定源IP地址，因为这是由套接字标识符隐式指定的。\n Suppose Host A sends two TCP segments back to back to Host B over a TCP connection. The first segment has sequence number 90; the second has sequence number 110.  How much data is in the first segment? Suppose that the first segment is lost but the second segment arrives at B. In the acknowledgment that Host B sends to Host A, what will be the acknowledgment number?    a) Consider sequence numbers, First segment=90\tSecond segment=110 Data in the first segment= 110-90 =20 b) Consider the first segment is lost but the second segment arrives at B. In the acknowledgment that Host B sends to Host A, then the acknowledgment number will be first segment of sequence number, that is 90.\n Consider the Telnet example discussed in Section 3.5. A few seconds after the user types the letter ‘C,’ the user types the letter ‘R.’ After typing the letter ‘R,’ how many segments are sent, and what is put in the sequence number and acknowledgment fields of the segments?   当主机A发送数据= ' R ‘时，则以序列号= 43和确认号= 80的分段发送给主机B。 然后主机B发送数据= ' R ' (echoesback ' R ‘)，序列号= 80，确认号= 44的段作为收据。 然后，主机A通过发送序列号为44、确认号为81的分段以及任何其他数据(如果有的话)来确认收到回显的’ R ‘。\nPiggyback Note that the acknowledgment for client-to-server data is carried in a segment carrying server-to-client data; this acknowledgment is said to be piggybackedon the server-to-client data segment.\nAcknowledgement MSS The maximum amount of data that can be grabbed and placed in a segment is limited by the maximum segment size (MSS) 可以在一个段中抓取和放置的最大数据量受**最大段大小(MSS)**的限制\nChap 4 Network Layer: Data Plane   Let’s review some of the terminology used in this textbook. Recall that the name of a transport-layer packet is segmentand that the name of a link-layer packet is frame. What is the name of a network-layer packet? Recall that both routers and link-layer switches are called packet switches. What is the fundamental difference between a router and link-layer switch? 让我们回顾一下这本教科书中使用的一些术语。回想一下传输层包是段，链路层包的名称是帧。网络层包的名称是什么?回想一下，路由器和链路层交换机都被调用分组交换机。路由器和链路层交换机的基本区别是什么?  A network-layer packet is a datagram. A router forwards a packet based on the packet’s IP (layer 3) address. A link-layer switch forwards a packet based on the packet’s MAC (layer 2) address. 网络层数据包是数据报。路由器根据包的IP(第三层)地址转发包。链路层交换机根据数据包的MAC地址(第二层)转发数据包。\n We noted that network layer functionality can be broadly divided into data plane functionality and control plane functionality. What are the main functions of the data plane? Of the control plane? 我们注意到，网络层的功能可以大致分为数据平面功能和控制平面功能。数据平面的主要功能是什么?控制平面的?  The main function of the data plane is packet forwarding, which is to forward datagrams from their input links to their output links. For example, the data plane’s input ports perform physical layer function of terminating an incoming physical link at a router, perform link-layer function to interoperate with the link layer at the other side of the incoming link, and perform lookup function at the input ports. 数据平面的主要功能是包转发，即将数据报从输入链路转发到输出链路。例如，数据平面的输入端口执行物理层功能，即在路由器上终止传入的物理链路，执行链路层功能以与传入链路另一端的链路层互操作，并在输入端口执行查找功能。 The main function of the control plane is routing, which is to determine the paths a packet takes from its source to its destination. A control plane is responsible for executing routing protocols, responding to attached links that go up or down, communicating with remote controllers, and performing management functions. 控制平面的主要功能是路由，即确定数据包从源到目的地的路径。控制平面负责执行路由协议，响应上行或下行的附加链路，与远程控制器通信，执行管理功能。\n We made a distinction between the forwarding function and the routing function performed in the network layer. What are the key differences between routing and forwarding? 我们对网络层中执行的转发功能和路由功能进行了区分。路由和转发的主要区别是什么?  The key differences between routing and forwarding is that forwarding is a router’s local action of transferring packets from its input interfaces to its output interfaces, and forwarding takes place at very short timescales (typically a few nanoseconds), and thus is typically implemented in hardware. Routing refers to the network-wide process that determines the end-to-end paths that packets take from sources to destinations. Routing takes place on much longer timescales (typically seconds), and is often implemented in software. 路由和转发的关键区别在于，转发是路由器将数据包从输入接口传输到输出接口的本地动作，而转发发生在非常短的时间内(通常只有几纳秒)，因此通常是在硬件中实现的。路由是指确定信息包从源到目的地的端到端路径的网络范围的过程。路由发生在更长的时间尺度上(通常是秒)，并且通常是在软件中实现的。\n What is the role of the forwarding table within a router? 转发表在路由器中的作用是什么?  The role of the forwarding table within a router is to hold entries to determine the outgoing link interface to which an arriving packet will be forwarded via switching fabric. 转发表在路由器中的作用是保存表项，以确定到达的数据包将通过交换结构转发到哪个出接口。\n We said that a network layer’s service model “defines the characteristics of end-to-end transport of packets between sending and receiving hosts.” What is the service model of the Internet’s network layer? What guarantees are made by the Internet’s service model regarding the host-to-host delivery of datagrams? 我们说过，网络层的服务模型“定义了发送主机和接收主机之间的包的端到端传输的特征”。因特网的网络层的服务模型是什么?关于主机到主机的数据报传送，因特网的服务模型提供了什么保证?  The service model of the Internet’s network layer is best-effort service. With this service model, there is no guarantee that packets will be received in the order in which they were sent, no guarantee of their eventual delivery, no guarantee on the end-to-end delay, and no minimal bandwidth guarantee. 因特网网络层的服务模型是尽力而为服务。使用这种服务模型，不能保证数据包将按照它们发送的顺序接收，不能保证它们的最终交付，不能保证端到端延迟，也不能保证最小带宽。\n What does each input port of a high speed router store to facilitate fast for- warding decisions? 一个高速路由器的每个输入端口存储什么以方便快速的防止决定?   Suppose that an arriving packet matches two or more entries in a router’s forwarding table. With traditional destination-based forwarding, what rule does a router apply to determine which of these rules should be applied to determine the output port to which the arriving packet should be switched? 假设一个到达的数据包与路由器转发表中的两个或多个表项相匹配。对于传统的基于目的地的转发，路由器应该应用什么规则来确定应该应用这些规则中的哪一个来确定到达的数据包应该被交换到的输出端口?  A router uses longest prefix matching to determine which link interface a packet will be forwarded to if the packet’s destination address matches two or more entries in the forwarding table. That is, the packet will be forwarded to the link interface that has the longest prefix match with the packet’s destination. 如果报文的目的地址与转发表中的两个或两个以上的表项相匹配，路由器使用最长前缀匹配来确定报文将被转发到哪个链路接口。即报文将被转发到与报文目的地址前缀匹配最长的链路接口。\n Suppose Host A sends Host B a TCP segment encapsulated in an IP data- gram. When Host B receives the datagram, how does the network layer in Host B know it should pass the segment (that is, the payload of the datagram) to TCP rather than to UDP or to some other upper-layer protocol? 假设主机A向主机B发送一个封装在IP数据报中的TCP段。当主机B接收到数据报时，主机B中的网络层如何知道它应该将段(即数据报的有效负载)传递给TCP而不是UDP或其他一些上层协议?  The 8-bit protocol field in the IP datagram contains information about which transport layer protocol the destination host should pass the segment to. IP数据报中的8位协议字段包含关于目的地主机应该将段传递到哪个传输层协议的信息。\n What field in the IP header can be used to ensure that a packet is forwarded through no more than Nrouters? 在IP报头中有哪些字段可以用来保证一个报文转发不超过N路由器?  Time-to-live. 生存时间\n Recall that we saw the Internet checksum being used in both transport-layer segment (in UDP and TCP headers, Figures 3.7 and 3.29 respectively) and in network-layer datagrams (IP header, Figure 4.16). Now consider a transport layer segment encapsulated in an IP datagram. Are the checksums in the segment header and datagram header computed over any common bytes in the IP datagram? Explain your answer. 回想一下，我们在传输层段(分别在UDP和TCP报头中，图3.7和3.29)和网络层数据报(IP报头，图4.16)中都使用了Internet校验和。现在考虑一个封装在IP数据报中的传输层段。段报头和数据报报头中的校验和是否在IP数据报中的任何公共字节上计算?解释你的答案。  No. IP header checksum only computes the checksum of an IP packet’s IP header fields, which share no common bytes with the IP datagram’s transport-layer segment part. 不。IP报头校验和只计算IP包的IP报头字段的校验和，这些字段与IP数据报的传输层段部分不共享公共字节。\n When a large datagram is fragmented into multiple smaller datagrams, where are these smaller datagrams reassembled into a single larger datagram? 当一个大数据报被分割成多个较小的数据报时，这些较小的数据报在哪里重新组装成一个较大的数据报呢?  The reassembly of the fragments of an IP datagram is done in the datagram’s destination host. IP数据报的片段的重组是在数据报的目标主机中完成的。\n A router has eight interfaces. How many IP addresses will it have? 路由器有8个接口。它将有多少IP地址?   What is the 32-bit binary equivalent of the IP address 223.1.3.27 ? 与IP地址223.1.3.27对应的32位二进制文件是什么?  11011111 00000001 00000011 00011100.\n Suppose there are four routers between a source host and a destination host. Ignoring fragmentation, an IP datagram sent from the source host to the destination host will travel over how many interfaces? How many forward- ing tables will be indexed to move the datagram from the source to the destination? 假设在一个源主机和一个目标主机之间有四个路由器。如果忽略分片，从源主机发送到目标主机的IP数据报将经过多少个接口?将索引多少个转发表以将数据报从源移动到目的地?  8 interfaces; 3 forwarding tables.\n Suppose an application generates chunks of 40 bytes of data every 20 msec, and each chunk gets encapsulated in a TCP segment and then an IP datagram. What percentage of each datagram will be overhead, and what percentage will be application data? 假设一个应用程序每20 msec生成40字节的数据块，每个数据块封装在一个TCP段中，然后封装在一个IP数据报中。每个数据报的开销占多大百分比，应用程序数据占多大百分比?  50% overhead.\n What is a private network address? Should a datagram with a private network address ever be present in the larger public Internet? Explain. 什么是私网地址?具有专用网络地址的数据报是否应该出现在更大的公共互联网中?解释一下。  A private network address of a device in a network refers to a network address that is only meaningful to those devices within that network. A datagram with a private network address should never be present in the larger public Internet, because the private network address is potentially used by many network devices within their own private networks. 网络中设备的专用网络地址指的是仅对该网络中的设备有意义的网络地址。具有专用网络地址的数据报永远不应该出现在更大的公共Internet中，因为专用网络地址可能被它们自己的专用网络中的许多网络设备使用。\n Chap 5 Network Layer: Control Plane   True or false: When an OSPF route sends its link state information, it is sent only to those nodes directly attached neighbors. Explain. OSPF路由发送链路状态信息时，只发送给与它直接相连的邻居。解释一下。  OSPF（ Open Shortest Path First ） False With OSPF, a router broadcasts its link-state information to all other routers in the autonomous system to which it belongs, not just to its neighboring routers. This is because with OSPF, each router needs to construct a complete topological map of the entire AS and then locally runs Dijkstra’s shortest-path algorithm to determine its least- cost paths to all other nodes in the same AS. OSPF要广播链路信息，每台路由器都需要构造一个完整的整个自治系统的拓扑图。\n True or false: When a BGP router receives an advertised path from its neighbor, it must add its own identity to the received path and then send that new path on to all of its neighbors. Explain. 当BGP路由器接收到邻居发布的路径时，它必须在接收到的路径上添加自己的身份，然后将新的路径发送给所有邻居。解释一下。  BGP （ Border Gateway Protocol ）边界网关协议 False. A BGP router can choose not to add its own identity to the received path and then send that new path on to all of its neighbors, as BGP is a policy-based routing protocol. This can happen in the following scenario. The destination of the received path is some other AS, instead of the BGP router’s AS, and the BGP router does not want to work as a transit router. BGP可以选择不添加信息（当不希望作为中转路由器工作时）\n What is meant by a control plane that is based on per-router control? In such cases, when we say the network control and data planes are implemented “monolithically,” what do we mean? 基于每个路由器控制的控制平面是什么意思?在这种情况下，当我们说网络控制和数据平面是“单一的”实现时，我们的意思是什么?  Per-router control means that a routing algorithm runs in each and every router; both forwarding and routing function are constrained within each router. Each router has a routing component that communicates with the routing components in other routers to compute the values for its forwarding table. In such cases, we say that the network control and data planes are implemented monolithically because each router works as an independent entity that implements its own control and data planes. 每个路由器控制意味着路由算法在每个路由器上运行;在每个路由器中，转发和路由功能都受到限制。每个路由器都有一个路由组件，该组件与其他路由器中的路由组件通信，以计算其转发表的值。在这种情况下，我们说网络控制和数据平面是单个实现的，因为每个路由器都作为一个独立的实体来实现自己的控制和数据平面。\n What is meant by a control plane that is based on logically centralized control? In such cases, are the data plane and the control plane implemented within the same device or in separate devices? Explain. 基于逻辑集中控制的控制平面是什么意思?在这种情况下，数据平面和控制平面是在同一个设备中实现还是在单独的设备中实现?解释一下。  Logically centralized control means that a logically central routing controller computes and distributes the forwarding tables to be used by each and every router, and each router does not compute its forwarding table, unlike the per-router control. In the case of logically centralized control, the data plane and control plane are implemented in separate devices; the control plane is implemented in a central server or multiple servers, and the data plane is implemented in each router. 逻辑集中控制是指一个逻辑上集中的路由控制器计算并分配每个路由器使用的转发表，而每个路由器不计算它的转发表，这与per-router控制不同。在逻辑集中控制的情况下，数据面和控制面分别在不同的设备上实现;控制平面在一台或多台服务器中实现，数据平面在每台路由器中实现。\n Chap 6 The Link Layer and LANs   What is framing in link layer? 链接层中的框架是什么?   If all the links in the Internet were to provide reliable delivery service, would the TCP reliable delivery service be redundant? Why or why not? 如果Internet上的所有链路都提供可靠的交付服务，TCP的可靠交付服务会是冗余的吗?为什么或为什么不?  Although each link guarantees that an IP datagram sent over the link will be received at the other end of the link without errors, it is not guaranteed that IP datagrams will arrive at the ultimate destination in the proper order. With IP, datagrams in the same TCP connection can take different routes in the network, and therefore arrive out of order. TCP is still needed to provide the receiving end of the application the byte stream in the correct order. Also, IP can lose packets due to routing loops or equipment failures. 尽管每个链路都保证了在链路上发送的IP数据报将在链路的另一端没有错误地接收到，但它不能保证IP数据报将以正确的顺序到达最终目的地。使用IP，同一TCP连接中的数据报在网络中可以通过不同的路由到达，因此到达的顺序是不一致的。TCP仍然需要以正确的顺序向应用程序的接收端提供字节流。此外，由于路由环路或设备故障，IP可能会丢失数据包。\n Name three error-detection strategies employed by link layer. 链路层使用的三种错误检测策略。   Suppose two nodes start to transmit at the same time a packet of length Lover a broadcast channel of rate R. Denote the propagation delay between the two nodes as dprop. Will there be a collision if dprop 6 L/R? Why or why not? 假设两个节点在速率为r的广播信道上同时开始传输长度为L的数据包，表示两个节点之间的传播延迟为dprop。如果dprop  There will be a collision in the sense that while a node is transmitting it will start to receive a packet from the other node. 当一个节点在传输时，它将开始从另一个节点接收数据包，这样就会产生冲突。\n How big is the MAC address space? The IPv4 address space? The IPv6 address space? MAC地址空间有多大?IPv4地址空间?IPv6地址空间?  2^48 MAC addresses; 2^32 IPv4 addresses; 2^128 IPv6 addresses.\n Suppose nodes A, B, and C each attach to the same broadcast LAN (through their adapters). If A sends thousands of IP datagrams to B with each encapsulating frame addressed to the MAC address of B, will C’s adapter process these frames? If so, will C’s adapter pass the IP datagrams in these frames to the network layer C? How would your answers change if A sends frames with the MAC broadcast address? 假设节点A、B和C都连接到同一个广播局域网(通过它们的适配器)。如果A发送数千个IP数据报给B，每个封装帧都被编址到B的MAC地址，C的适配器会处理这些帧吗?如果是，C的适配器将这些帧中的IP数据报传递到网络层C吗?如果A用MAC广播地址发送帧，你的答案会如何变化?  C’s adapter will process the frames, but the adapter will not pass the datagrams up the protocol stack. If the LAN broadcast address is used, then C’s adapter will both process the frames and pass the datagrams up the protocol stack. C的适配器将处理帧，但适配器不会将数据报向上传递到协议栈。如果使用了局域网广播地址，那么C的适配器将处理帧并将数据报向上传递到协议栈。\n Why is an ARP query sent within a broadcast frame? Why is an ARP response sent within a frame with a specific destination MAC address? 为什么ARP查询在广播帧内发送?为什么ARP响应在特定目的MAC地址的帧内发送?  An ARP query is sent in a broadcast frame because the querying host does not which adapter address corresponds to the IP address in question. For the response, the sending node knows the adapter address to which the response should be sent, so there is no need to send a broadcast frame (which would have to be processed by all the other nodes on the LAN). ARP查询是在广播帧中发送的，因为查询主机不知道哪个适配器地址对应的IP地址。对于响应，发送节点知道响应应该发送到的适配器地址，因此不需要发送广播帧(该帧必须由LAN上的所有其他节点处理)。\n For the network in Figure6.19, the router has two ARP modules, each with its own ARP table. Is it possible that the same MAC address appears in both tables? 对于图6.19中的网络，路由器有两个ARP模块，每个模块都有自己的ARP表。是否可能在两个表中出现相同的MAC地址?  No it is not possible. Each LAN has its own distinct set of adapters attached to it, with each adapter having a unique LAN address. 不，这不可能。每个局域网都有自己独特的适配器集，每个适配器都有一个独特的局域网地址。\n What is a hub used for?   Consider Figure 6.15. How many subnetworks are there, in the addressing sense of Section 4.3? 考虑图6.15。在第4.3节的寻址意义上，有多少个子网?  2 (the internal subnet and the external internet) 2(内部子网和外部互联网)\n Each host and router has an ARP table in its memory. What are the contents of this table?   Calculation and Analysis  假设用户共享一条3mbps的链路。再假设每个用户在传输时需要150 kbps，但是每个用户只传输10%的时间。(参见第1.3节中分组交换与电路交换的讨论。) a.使用电路切换时，支持多少用户? b.对于这个问题的其余部分，假设使用了分组交换。找出给定用户进行传输的概率。 c.假设有120个用户。求任意给定时刻，恰好有n个用户同时进行传输的概率。(提示:使用二项分布。) d.求同时有21个以上用户在传输的概率。\n在包括因特网在内的现代分组交换网络中，源主机将长应用层消息(例如，一个图像或一个音乐文件)分段成更小的分组，并将这些分组发送到网络中。然后，接收方将数据包重新组装成原始消息。我们将此过程为消息分段。 图1.27演示了带有和不带有消息分段的消息的端到端传输。考虑图1.27中从源发送到目的地的长度为8 # 106位的消息。假设图中每条链路为2mbps。忽略传播、队列和处理延迟。 a.考虑在不分段的情况下将消息从源发送到目的地。将消息从源主机移动到第一个包交换机需要多长时间?请记住，每个交换机使用存储和转发分组交换，将消息从源主机移动到目标主机的总时间是多少? b.现在假设消息被分成800个数据包，每个数据包有10000位长。将第一个包从源主机移动到第一个交换机需要多长时间?当第一个数据包从第一个交换机发送到第二个交换机时，第二个数据包从源主机发送到第一个交换机。在第一个交换机上什么时候会完全接收到第二个数据包? c.使用消息分段时，将文件从源主机移动到目标主机需要多长时间?将这一结果与你(a)部分的答案进行比较并评论。 d.除了减少延迟之外，使用消息分段的原因是什么? e.讨论消息分段的缺点。\n考虑以下ASCII字符串，当浏览器发送一个HTTP GET消息时，Wireshark捕获了这些字符(即，这是一个HTTP GET消息的实际内容)。字符是回车和换行字符(也就是说，下面文本中的斜体字字符串表示HTTP报头中此时包含的单个回车字符)。回答以下问题，指示您在下面的HTTP GET消息中找到答案的位置。\n考虑发送方窗口大小为4、序列号范围为1024的GBN协议。假设在时间t时，接收方期望的下一个有序包的序列号为k。假设媒体不重新对消息进行排序。请回答以下问题: a.在时间t时，发送方窗口内可能存在的序列号集合是什么?证明你的答案。 b.在时间t时，在所有可能的消息中，ACK字段的所有可能值是什么?证明你的答案。\n这里我们有一个窗口大小N=3。假设接收方收到了数据包k-1，并对该数据包和之前所有其他数据包进行了ack。如果所有这些ACK都已被发送方接收，那么发送方的窗口是[k, k+N-1]。接下来，假设发送方没有收到任何ack。在第二种情况下，发送方的窗口包含k-1和k-1以内(包括k-1)的N个包。因此发送方的窗口是[k-N,k-1]。通过这些参数，发送者窗口的大小为3，开始于[k- n,k]范围内的某个地方。 b)如果接收方在等待报文k，则接收到(并进行了ack)的报文k-1和之前的报文N-1。如果发送方尚未接收到这些N个ACK，则值为[k-N,k-1]的ACK消息可能仍在往回传播。因为发送方已经发送了数据包[k-N, k-1]，所以必须是发送方已经收到了k-N-1的ACK。一旦接收端发送了一个k-N-1的ACK，它将永远不会发送小于k-N-1的ACK。因此，飞行中ACK值的范围可以从k-N-1到k-1。\n考虑将一个L字节的大文件从主机A传输到主机b，假设MSS为536字节。 a.不耗尽TCP序列号的最大L值是多少?回想一下TCP序列号字段有4个字节。 b.对于在(a)中获得的L，找出传输文件需要的时间。假设总共有66字节的传输、网络和数据链路头被添加到每个段，然后产生的包通过155 Mbps的链路发送出去。忽略流量控制和拥塞控制，使A可以连续地泵出段。\n有232 = 4,294,967,296可能的序列号。 a)序号不会随着每段递增1。相反,它 按发送数据的字节数递增。因此MSS的大小无关紧要——从A发送到B的最大文件大小仅仅是字节数 可表示为232»4.19 gb。 b)段数isê536ú。66个字节的头被添加到每个 段给出了总计528,857,934字节的头。传输的总字节数为232 + 528,857,934 = 4.824́109字节。 因此，在155~Mbps的链路上传输文件需要249秒。\n主机A和B通过TCP连接进行通信，主机B已经从A接收到126字节以上的所有字节。假设主机A向主机B背靠背发送两个网段。第一个和第二个段分别包含80和40字节的数据。其中第一个报文段序号为127，源端口号为302，目的端口号为80。每当主机B从主机a接收到一个段时，它都会发送一个确认。 a.主机a发送给B的第二段，序列号- ber、源端口号、目的端口号分别是什么? b.如果第一个报文段在第二个报文段之前到达，在第一个报文段的确认中，确认号、源端口号和目的端口号分别是什么? c.如果第二段在第一段之前到达，在第一段到达的确认中，确认号是多少? d.假设A发送的两个片段顺序到达b。第一个确认丢失，第二个确认在第一个超时间隔之后到达。画一个时间表，显示这些段和所有其他段和确认发送。(假设没有额外的丢包。)对于图中的每个段，提供序列号和数据的字节数;对于您添加的每一个确认，请提供确认号码。\na)主机a到主机B的第二段，序号为207，源端口号为302，目的端口号为80。 b)如果第一个报文段在第二个报文段之前到达，则第一个报文段的确认号为207，源端口号为80，目的端口号为302。 c)如果第二个段在第一个段之前到达，在第一个到达的段的确认中，确认号是127，表示它仍然在等待127字节及以后的字节。\n第29页。第3.5.6节讨论了SYN cookie a.为什么服务器需要在SYNACK中使用特殊的初始序列号? b.假设攻击者知道目标主机使用SYN cookie。攻击者能否通过简单地向目标发送一个ACK包来创建半开或完全打开的连接?为什么或为什么不? 假设攻击者收集了大量服务器发送的初始序列号。攻击者是否可以通过发送带有这些初始序列号的ack来导致服务器创建许多完全打开的连接?为什么?\na)服务器使用特殊的初始序列号(从源ip、目的ip和端口的哈希值中获取)来防御SYN FLOOD攻击。 b)不能，攻击者不能通过简单的发送和ACK报文来创建半开或完全开的连接。半开放的连接是不可能的，因为在建立完整连接之前，使用SYN cookie的服务器不会为任何连接维护连接变量和缓冲区。为了建立完全开放的连接，攻击者应该知道与攻击者(欺骗的)源IP地址对应的特殊初始序列号。这个序列号需要每个服务器使用的“秘密”编号。由于攻击者不知道这个秘密数字，她无法猜测初始序列号。 c)不，服务器可以简单地在计算这些初始序列号时添加一个时间戳，并为这些序列号选择一个存活时间，并丢弃过期的初始序列号，即使攻击者重放它们。\n在3.5.4节中，我们看到TCP在执行快速重传之前一直等待，直到它收到三个重复的ack。为什么你认为TCP设计者选择不执行一个段的第一个重复ACK后的快速重传?\n假设发送了数据包n、n+1和n+2，并接收了数据包n并进行了ack。如果数据包n + 1, n + 2沿着end-to-end-path会重新排序(例如,收到的顺序n + 2, n + 1)的收据包n + 2将生成一个重复的ack n和将引发重传下的政策只有等待第二个重复ack重传。通过等待三重重复的ACK，它必须是两个第n包后的报文正确收到，而第n+1包未收到。三重重复ACK方案的设计者可能认为等待两个包(而不是1个)是在需要时触发快速重传之间的正确权衡，而不是在面对包重新排序时过早重传。\n在这个问题中，我们研究UDP或TCP是否提供了某种程度的端点身份验证。 a.考虑一个服务器接收一个UDP报文中的请求，并响应该请求的UDP报文(例如，由DNS服务器所做)。如果一个IP地址为X的客户机用地址Y来欺骗它的地址，那么服务器将在哪里发送它的响应? b.假设服务器收到源地址为Y的SYN报文，通过SYNACK响应后，收到确认号正确的源地址为Y的ACK报文。假设服务器选择一个随机的初始序列号，并且没有“中间人”，服务器能确定客户端确实在Y(而不是欺骗Y的其他地址X)吗?\na)服务器将响应发送给Y。 b)服务器可以确定客户端确实在Y。如果它在其他地址欺骗Y，则SYNACK将被发送到地址Y，并且该主机中的TCP不会发送回TCP ACK段。即使攻击者发送一个适当时间的TCP ACK段，它也不知道正确的服务器序列号(因为服务器使用随机的初始序列号)。\n考虑一个使用32位主机地址的数据报网络。假设一台路由器有4条链路，编号从0到3，报文按如下方式发送到链路接口:\na.提供5个表项的转发表，使用最长前缀匹配，将报文转发到正确的链路接口。 b.描述转发表如何为带有目的地址的数据报确定适当的链路接口: 第一个地址的前缀匹配为第5个表项:link接口3第二个地址的前缀匹配为第3个表项:link接口2 第三个地址的前缀匹配是第4 Entry: link interface 3\n考虑一个使用8位主机地址的数据报网络。假设一台路由器使用最长前缀匹配，并且有如下转发表: 对于这四个接口中的每个接口，给出与之关联的目的主机地址范围和范围内的地址数量。\n",
+  "wordCount" : "5292",
+  "inLanguage": "en",
+  "datePublished": "2021-07-02T00:15:17+08:00",
+  "dateModified": "2021-07-02T00:15:17+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Me"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.com/FreanJa/freanja.github.io/post/2021-07-02/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FreanJa's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.com/FreanJa/freanja.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://github.com/FreanJa/freanja.github.io/" accesskey="h" title="Home (Alt + H)">
+                <img src="/apple-touch-icon.png" alt="logo" aria-label="logo"
+                    height="35">Home</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://github.com/FreanJa/freanja.github.io/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/FreanJa/freanja.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/FreanJa/freanja.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/FreanJa/freanja.github.io/about/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://github.com/FreanJa/freanja.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://github.com/FreanJa/freanja.github.io/post/">Posts</a></div>
+    <h1 class="post-title">
+      CN knowledge combing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h1>
+    <div class="post-meta">July 2, 2021&nbsp;·&nbsp;25 min&nbsp;·&nbsp;Me
+</div>
+  </header> 
+  <div class="post-content"><p><img loading="lazy" src="https://pic.freanja.cn/images/2021/09/22/202109230300154.png" alt="E7D93801-C5AD-4FA6-86CE-CAD678E4ECB4"  />
+</p>
+<h1 id="chap-1-introduction">Chap 1 Introduction<a hidden class="anchor" aria-hidden="true" href="#chap-1-introduction">#</a></h1>
+<hr>
+<ol>
+<li>What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?</li>
+</ol>
+<p><strong>ANS</strong> There is no difference. Throughout this text, the words “host” and “end system” are used interchangeably.
+End systems include PCs, workstations, Web servers, mail servers, PDAs, Internet-connected game consoles, etc.</p>
+<ul>
+<li>没有区别。在本文中，“主机”和“终端系统”这两个词是互换使用的。</li>
+<li>终端系统包括pc机、工作站、Web服务器、邮件服务器、pda、联网游戏机等。</li>
+<li>Web服务器也是终端系统</li>
+</ul>
+<hr>
+<ol start="2">
+<li>Describe the protocol that might be used by two people having a telephonic conversation to initiate and end the conversation.</li>
+</ol>
+<p><strong>ANS</strong> Based on the human protocol, in order to generate a telephonic conversation. When a caller initiates a call, and after the callee accepts the call, the caller commences the communication by using specific messages (e.g., Allo (a message transmitting to, and received by the callee)), and after receiving feedback from the callee (e.g., Hello (transmitting an implicit message to the caller)). Then, they both keep the communication on based specific sent messages (transmitting messages from caller to callee and vice versa), and specific received response messages (transmitting a replay to caller or callee). After finishing the talk, one of the involved parts could end up the call by using some key works (e.g., I have to go now, goodbye) and they both end up the call by hanging up the phones.</p>
+<p>发起方： Hello；接收方回复		&ndash;—&gt; 开始对话
+双方交换信息
+某一方提出结束，另一方接收到这个信息		—-&gt; 结束通话</p>
+<hr>
+<ol start="3">
+<li>Why are standards important for protocols?</li>
+</ol>
+<p><strong>ANS</strong> Standards are important for protocols so that <strong>people can create networking systems and products that interoperate</strong>.
+标准对于协议很重要，这样人们就可以创建能够互操作的网络系统和产品。
+（有统一的标准，就可以协同工作）</p>
+<hr>
+<ol start="4">
+<li>Consider sending a packet from a source host to a destination host over a fixed route. List the delay components in the end-to-end delay. Which of these delays are constant and which are variable?</li>
+</ol>
+<p><strong>ANS</strong> The delay components are <strong>processing delays</strong>, <strong>transmission delays</strong>, <strong>propagation delays</strong>, and <strong>queuing delays</strong>. All of these delays are fixed, except for the queuing delays, which are variable.
+延迟组件是<strong>处理延迟、传输延迟、传播延迟和排队延迟</strong>。所有这些延迟都是固定的，除了 ~排队延迟是可变~ 的。</p>
+<hr>
+<ol start="5">
+<li>A user can directly connect to a server through either long-range wireless or a twisted-pair cable for transmitting a 1500-bytes file. The transmission rates of the wireless and wired media are 2 and 100 Mbps, respectively. Assume that the propagation speed in air is 3 * 108 m/s, while the speed in the twisted pair is 2 * 108 m/s. If the user is located 1 km away from the server, what is the nodal delay when using each of the two technologies?</li>
+</ol>
+<p><strong>ANS</strong>
+<img loading="lazy" src="https://pic.freanja.cn/images/2021/09/22/202109230300824.png" alt="截屏2021-07-02 上午3.54.23"  />
+
+transmission delay + propagation delay
+dTrans = L/R		dProp = d/s</p>
+<hr>
+<ol start="6">
+<li>Suppose Host A wants to send a large file to Host B. The path from Host A to Host B has three links, of rates R1 = 500 kbps, R2 = 2 Mbps, and R3 = 1 Mbps.
+<ul>
+<li>Assuming no other traffic in the network, what is the throughput for the file transfer?</li>
+<li>Suppose the file is 4 million bytes. Dividing the file size by the through- put, roughly how long will it take to transfer the file to Host B?</li>
+<li>Repeat (a) and (b), but now with <em>R</em>2 reduced to 100 kbps.</li>
+</ul>
+</li>
+</ol>
+<p><strong>ANS</strong>
+* 500 kbps    （ determined by minimum rata )
+* 64 seconds    ( 4 * 106 * 8 / 0.5 * 106 )
+* 100kbps; 320 seconds  ( choose 100kbps )</p>
+<hr>
+<ol start="7">
+<li>Suppose end system A wants to send a large file to end system B. At a very high level, describe how end system A creates packets from the file. When one of these packets arrives to a router, what information in the packet does the router use to determine the link onto which the packet is forwarded? Why is packet switching in the Internet analogous to driving from one city to another and asking directions along the way?
+假设端系统A想向端系统B发送一个大文件。
+<ul>
+<li>在一个非常高的级别上，描述端系统A如何从该文件创建数据包。</li>
+<li>当其中一个数据包到达路由器时，路由器使用数据包中的什么信息来确定数据包所转发到的链路?</li>
+<li>为什么因特网上的分组交换类似于开车从一个城市到另一个城市，并在途中问路?</li>
+</ul>
+</li>
+</ol>
+<p><strong>ANS</strong>
+End system A breaks the large file into chunks. It adds header to each chunk, thereby generating multiple packets from the file. The header in each packet includes the IP address of the destination (end system B).
+The packet switch uses the destination IP address in the packet to determine the outgoing link.
+Asking which road to take is analogous to a packet asking which outgoing link it should be forwarded on, given the packet’s destination address.
+终端系统A将大文件分成若干块。它向每个块添加头，从而从文件生成多个包。每个包的报头包括目的(端系统B)的IP地址。
+包交换机根据包中的目的IP地址来确定出路。
+询问要走哪条路类似于信息包在给定数据包的目的地址的情况下询问它应该沿着哪条输出链路转发。</p>
+<hr>
+<ol start="8">
+<li>If two end-systems are connected through multiple routers and the datalink level between them ensures reliable data delivery, is a transport protocol offering reliable data delivery between these two end-systems necessary? Why?
+如果两个终端系统通过多个路由器连接，并且它们之间的数据链路层确保了可靠的数据传递，那么在这两个终端系统之间提供可靠的数据传递的传输协议是必要的吗?为什么?</li>
+</ol>
+<p><strong>ANS</strong>
+A reliable data link protocol can recover from errors affecting transmissions on individual links.
+However, there are more sources of losses in an interconnection network formed by multiple routers. For instance, messages can be dropped by a router whose buffer is completely filled with packets. Moreover, a router may malfunction or break, thus destroying all buffered messages. Thus, it makes more sense to use a transport protocol for reliable data delivery in the considered scenario.
+一个可靠的数据链路协议可以从影响单个链路传输的错误中恢复。
+然而，在由多个路由器组成的互连网络中，有更多的损耗来源。例如，报文可以被路由器的缓冲区完全填满。此外，路由器可能发生故障或中断，从而破坏所有缓冲的消息。因此，在考虑的场景中使用传输协议进行可靠的数据传递更有意义。</p>
+<hr>
+<ol start="9">
+<li>What are the five layers in the Internet protocol stack? What are the principal responsibilities of each of these layers?</li>
+</ol>
+<p><strong>ANS</strong>
+* <strong>Application layer</strong>: Implement a specific network application through the interaction between application processes
+通过应用进程间的交互来完成特定网络应用
+* <strong>Transport layer</strong>: Provides a common data transfer service for communication between processes in two hosts
+为两个主机中进程之间的通信提供通用的数据传输服务
+* <strong>Network layer</strong>:Communication services are provided by different hosts on a packet switched network
+分组交换网上不同主机提供通信服务
+* <strong>Link layer</strong>:On-link transmission between two adjacent nodes
+两个相邻节点间的链路上传送问题
+* <strong>Physical layer</strong>:Transmits bitstreams transparently
+透明地传送比特流</p>
+<hr>
+<ol start="10">
+<li>What do encapsulation and de-encapsulation mean? Why are they needed in a layered protocol stack?
+封装和反封装是什么意思?为什么在分层协议栈中需要它们?</li>
+</ol>
+<p><strong>ANS</strong>
+Encapsulation is the process of passing a packet from a higher layer to a lower layer. In the simplest case, it simply appends additional information (i.e., a header) to the source packet. In more complicated scenarios, the original packet can be split into multiple packets, each carrying its own header.
+封装是将一个数据包从较高的层传递到较低的层的过程。在最简单的情况下，它只是将附加信息(例如，一个头)附加到源包。在更复杂的情况下，原始数据包可以被拆分为多个数据包，每个数据包携带自己的报头。
+Decapsulation is the opposite process of encapsulation. It extracts the header from a source packet from a lower layer and passes the payload to the higher layer. If lower layer packets are part of a sequence, the corresponding payloads are put together before they are passed to the higher layer.
+解封装是封装的相反过程。它从较低一层的源包中提取报头，并将有效负载传递给较高一层。如果较低层的数据包是序列的一部分，相应的有效负载在传递到较高层之前被放在一起。
+Each protocol in a layer of a protocol stack relies on the services of the lower layers but not on their information. Thus, the information a protocol needs to process a packet should entirely be contained in the header of that protocol. Encapsulation and decapsulation are flexible mechanisms to allow each protocol to operate independently from others while being able to interface with each other.
+协议栈一层中的每个协议依赖于较低层的服务，而不是它们的信息。因此,协议需要处理数据包的信息应该完全包含在该协议的报头中。封装和解封装是一种灵活的机制，允许每个协议独立地操作，同时能够相互接口。</p>
+<hr>
+<ol start="11">
+<li>Which layers in the Internet protocol stack does a router process? Which layers does a link-layer switch process? Which layers does a host process?
+路由器处理因特网协议栈的哪一层?链路层交换处理哪些层?宿主进程要处理哪些层?</li>
+</ol>
+<p><strong>ANS</strong>
+Routers process <strong>network, link and physical</strong> layers (layers 1 through 3).
+Link layer switches process <strong>link and physical</strong> layers (layers 1 through2).
+Hosts process <strong>all five layers</strong>.</p>
+<hr>
+<h1 id="chap-2-application-layer">Chap 2 Application Layer<a hidden class="anchor" aria-hidden="true" href="#chap-2-application-layer">#</a></h1>
+<hr>
+<ol>
+<li>A user requests a Web page that consists of some text and three images. For this page, the client will send one request message and receive four response messages.
+用户请求一个由一些文本和三个图像组成的Web页面。对于这个页面，客户机将发送一条请求消息，并接收四条响应消息。</li>
+</ol>
+<p>False
+request - response 	需一一对应</p>
+<hr>
+<ol start="2">
+<li>Two distinct Web pages (for example, <a href="http://www.mit.edu/research.html">www.mit.edu/research.html</a> and <a href="http://www.mit.edu/students.html">www.mit.edu/students.html</a>) can be sent over the same persistent connection.
+两个不同的Web页面(例如 <a href="http://www.mit.edu/research.html">www.mit.edu/research.html</a>和www.mit.edu/students.html)可以通过同一个持久连接发送。</li>
+</ol>
+<p>True
+同一个域名对应同一台服务器，已经建立了TCP连接，可以传输多个object</p>
+<hr>
+<ol start="3">
+<li>With non-persistent connections between browser and origin server, it is possible for a single TCP segment to carry two distinct HTTP request messages.
+在浏览器和源服务器之间的非持久连接中，单个TCP段可以携带两个不同的HTTP请求消息。</li>
+</ol>
+<p>False
+非持续连接中，一个object — 一个TCP连接</p>
+<hr>
+<ol start="4">
+<li>The Date: header in the HTTP response message indicates when the object in the response was last modified.
+HTTP响应消息中的Date: 标头表示响应中的对象最后一次修改的时间。</li>
+</ol>
+<p>False
+Last modified
+Date: 报文创建时间</p>
+<hr>
+<ol start="5">
+<li>HTTP response messages never have an empty message body.
+HTTP响应消息不会有空消息体。</li>
+</ol>
+<p>False
+204 No Content</p>
+<hr>
+<ol start="6">
+<li>The Last-Modified: header in the HTTP response message indicate when the object in the response was last modified</li>
+</ol>
+<p>True</p>
+<hr>
+<ol start="7">
+<li>With persistent connections between browser and origin server, it is possible for a single TCP segment (or packet) to carry two distinct HTTP request messages?</li>
+</ol>
+<p>True</p>
+<hr>
+<ol start="8">
+<li>List five non-proprietary Internet applications and the application-layer protocols that they use.</li>
+</ol>
+<p>The Web: HTTP; file transfer: FTP; remote login: Telnet; e-mail: SMTP; BitTorrent file sharing: BitTorrent protocol</p>
+<hr>
+<ol start="9">
+<li>What is the difference between network architecture and application architecture?</li>
+</ol>
+<p>Network architecture refers to the organization of the communication process into layers (e.g., the five-layer Internet architecture).
+网络体系结构是指将通信过程组织成层(如五层Internet体系结构)。
+Application architecture, on the other hand, is designed by an application developer and dictates the broad structure of the application (e.g., client-server or P2P).
+应用程序架构是由应用程序开发人员设计的，它规定了应用程序的总体结构(例如，客户机-服务器或P2P)。</p>
+<hr>
+<ol start="10">
+<li>For a communication session between a pair of processes, which process is the client and which is the server?</li>
+</ol>
+<p>The process which initiates the communication is the client; the process that waits to be contacted is the server.
+发起通信的过程是客户端;等待联系的进程是服务器。</p>
+<hr>
+<ol start="11">
+<li>Why are the terms client and server still used in peer-to-peer applications?</li>
+</ol>
+<p>In a P2P file-sharing application, the peer that is receiving a file is typically the client and the peer that is sending the file is typically the server.
+在P2P文件共享应用程序中，接收文件的对等体通常是客户端，发送文件的对等体通常是服务器。</p>
+<hr>
+<ol start="12">
+<li>What information is used by a process running on one host to identify a process running on another host?</li>
+</ol>
+<p>The IP address of the destination host and the port number of the socket in the destination process.
+目的主机的IP地址和目的进程中套接字的端口号。
+destination host’s IP address &amp; port number of the socket</p>
+<hr>
+<ol start="13">
+<li>What is the role of HTTP in a network application? What other components are needed to complete a Web application?</li>
+</ol>
+<p>Establish the connection between client and server for data transmission
+建立客户端和服务器的连接，进行数据传输</p>
+<hr>
+<ol start="14">
+<li>Referring to Figure 2.4, we see that none of the applications listed in Figure 2.4 requires both no data loss and timing. Can you conceive of an application that requires no data loss and that is also highly time-sensitive?</li>
+</ol>
+<p>One such example is remote word processing, for example, with Google docs. However, because Google docs runs over the Internet (using TCP), timing guarantees are not provided.</p>
+<hr>
+<ol start="15">
+<li>List the four broad classes of services that a transport protocol can provide. For each of the service classes, indicate if either UDP or TCP (or both) provides such a service.</li>
+</ol>
+<p>a) Reliable data transfer
+TCP provides a reliable byte-stream between client and server but UDP does not.
+b) A guarantee that a certain value for throughput will be maintained
+Neither
+c) A guarantee that data will be delivered within a specified amount of time
+Neither
+d) Confidentiality (via encryption)
+Neither</p>
+<p>1.可靠的数据传输；2.保持一定吞吐量；3.保证一定时间内交付；4.机密性</p>
+<hr>
+<ol start="16">
+<li>What is meant by a handshaking protocol?</li>
+</ol>
+<p>A protocol uses handshaking if the two communicating entities first exchange control packets before sending data to each other. SMTP uses handshaking at the application layer whereas HTTP does not.
+如果两个通信实体在互相发送数据之前先交换控制数据包，那么协议使用握手。SMTP在应用层使用握手，而HTTP不使用。</p>
+<hr>
+<ol start="17">
+<li>What does a stateless protocol mean? Is IMAP stateless? What about SMTP?</li>
+</ol>
+<p>IMAP无状态
+SMTP有状态</p>
+<hr>
+<ol start="18">
+<li>How can websites keep track of users? Do they always need to use cookies?
+网站如何跟踪用户?他们总是需要使用cookie吗?</li>
+</ol>
+<p>IP地址； HTTP Referrer； Cookies；User agent</p>
+<hr>
+<ol start="19">
+<li>Describe how Web caching can reduce the delay in receiving a requested object. Will Web caching reduce the delay for all objects requested by a user or for only some of the objects? Why?
+描述Web缓存如何减少接收请求对象时的延迟。Web缓存是否减少了用户请求的所有对象的延迟，还是只减少了部分对象的延迟?为什么?</li>
+</ol>
+<p>Web caching can bring the desired content “closer” to the user, possibly to the same LAN to which the user’s host is connected. Web caching can reduce the delay for all objects, even objects that are not cached, since caching reduces the traffic on links.
+Web缓存可以使所需内容“更接近”用户，可能与用户的主机所连接的同一局域网。Web缓存可以减少所有对象的延迟，甚至是未缓存的对象，因为缓存减少了链接上的流量。</p>
+<hr>
+<ol start="20">
+<li>Telnet into a Web server and send a multiline request message. Include in the request message the If-modified-since: header line to force a response message with the 304 Not Modified status code.
+Telnet到Web服务器并发送多行请求消息。在请求消息中包含If-modified-since:标题行，以强制使用304 Not Modified状态码的响应消息。</li>
+</ol>
+<hr>
+<ol start="21">
+<li>Are there any constraints on the format of the HTTP body? What about the email message body sent with SMTP? How can arbitrary data be transmitted over SMTP?</li>
+</ol>
+<p>对HTTP正文格式的约束
+是的，在HTTP正文的格式上存在协议约束。协议约束用于防止缓冲区溢出之类的攻击。缓冲区溢出可能发生在web应用程序和服务器中，这些应用程序和服务器没有将HTTP协议的元素限制在可接受的长度内，或者错误地处理了格式不正确的请求。这样的错误会导致安全性问题</p>
+<hr>
+<h3 id="web-page">Web Page<a hidden class="anchor" aria-hidden="true" href="#web-page">#</a></h3>
+<p>A <strong>Web page</strong>(also called a document) consists of objects.
+Web页面(也称为文档)由对象组成。</p>
+<h3 id="object">Object<a hidden class="anchor" aria-hidden="true" href="#object">#</a></h3>
+<p>An <strong>object</strong> is simply a file—such as an HTML file, a JPEG image, a Java applet, or a video clip—that is addressable by a single URL.
+对象只是一个文件，例如HTML文件、JPEG图像、Java applet或视频剪辑，可以通过单个URL寻址。</p>
+<h3 id="url">URL<a hidden class="anchor" aria-hidden="true" href="#url">#</a></h3>
+<p><strong>Uniform Resource Locator</strong> 统一资源定位器</p>
+<h3 id="web-browser--client">Web browser / client<a hidden class="anchor" aria-hidden="true" href="#web-browser--client">#</a></h3>
+<h3 id="web-servers--server">Web servers / server<a hidden class="anchor" aria-hidden="true" href="#web-servers--server">#</a></h3>
+<h3 id="http">HTTP<a hidden class="anchor" aria-hidden="true" href="#http">#</a></h3>
+<p><strong>HyperText Transfer Protocol</strong> 超文本传输<strong>协议</strong></p>
+<h3 id="request-message">Request message<a hidden class="anchor" aria-hidden="true" href="#request-message">#</a></h3>
+<h3 id="response-message">Response message<a hidden class="anchor" aria-hidden="true" href="#response-message">#</a></h3>
+<h3 id="tcp">TCP<a hidden class="anchor" aria-hidden="true" href="#tcp">#</a></h3>
+<p><strong>HTTP uses TCP</strong> as its underlying transport protocol (rather than running on top of UDP).
+传输控制协议 <strong>Transmission Control Protocol</strong> 是一种面向连接的、可靠的、基于字节流的<strong>传输层</strong>通信协议</p>
+<h3 id="stateless-protocol">Stateless protocol<a hidden class="anchor" aria-hidden="true" href="#stateless-protocol">#</a></h3>
+<p>Because an HTTP server maintains no information about the clients, HTTP is said to be a stateless protocol.
+因为HTTP服务器不维护关于客户端的信息，所以HTTP被称为无状态协议。</p>
+<h3 id="persistent-connection">Persistent connection<a hidden class="anchor" aria-hidden="true" href="#persistent-connection">#</a></h3>
+<p>all of the requests and their corresponding responses be sent over the <em>same</em>TCP connection
+通过相同的TCP连接发送所有的请求及其相应的响应</p>
+<h3 id="non-persistent-connection">Non-Persistent connection<a hidden class="anchor" aria-hidden="true" href="#non-persistent-connection">#</a></h3>
+<p>each request/response pair be sent over a <em>separate</em>TCP connection
+通过单独的TCP连接发送每个请求/响应对</p>
+<h3 id="round-trip-time-rtt">round trip time (RTT)<a hidden class="anchor" aria-hidden="true" href="#round-trip-time-rtt">#</a></h3>
+<p>which is the time it takes for a small packet to travel from client to server and then back to the client.
+从请求到接收到文件的总时间</p>
+<h3 id="dnodal--dproc--dqueue--dtrans--dprop">dnodal = dproc + dqueue + dtrans + dprop<a hidden class="anchor" aria-hidden="true" href="#dnodal--dproc--dqueue--dtrans--dprop">#</a></h3>
+<h4 id="packet-propagation-delay-包传递-到下个节点">packet-propagation delay (包传递 到下个节点<a hidden class="anchor" aria-hidden="true" href="#packet-propagation-delay-包传递-到下个节点">#</a></h4>
+<p>§d: length of physical link
+§s: propagation speed (~2x108 m/sec)
+dprop = d/s</p>
+<h4 id="packet-queueing-delay-包排队">packet-queueing delay (包排队<a hidden class="anchor" aria-hidden="true" href="#packet-queueing-delay-包排队">#</a></h4>
+<h4 id="packet-processing-delay-包处理">packet-processing delay (包处理<a hidden class="anchor" aria-hidden="true" href="#packet-processing-delay-包处理">#</a></h4>
+<h4 id="packet-transmission-delay-包传输-节点内">packet-transmission delay (包传输 节点内<a hidden class="anchor" aria-hidden="true" href="#packet-transmission-delay-包传输-节点内">#</a></h4>
+<p>§L: packet length (bits)
+§R: link transmission rate (bps)
+dtrans = L/R</p>
+<h1 id="chap-3">Chap 3<a hidden class="anchor" aria-hidden="true" href="#chap-3">#</a></h1>
+<hr>
+<ol>
+<li>Host A is sending Host B a large file over a TCP connection. Assume Host B has no data to send Host A. Host B will not send acknowledgments to Host A because Host B cannot piggyback the acknowledgments on data.</li>
+</ol>
+<p>False
+TCP是可靠传输 一定会有确认信息</p>
+<hr>
+<ol start="2">
+<li>The size of the TCP rwnd never changes throughout the duration of the connection.</li>
+</ol>
+<p>False
+rwnd = RcvBuffer - [LastByteRcvd - LastByteRead].
+rwnd表示的是接收窗口的大小, 这取决于接收方应用程序从缓存中读取数据的速率和发送方发送的速率, 是会变化的.</p>
+<hr>
+<ol start="3">
+<li>Suppose Host A is sending Host B a large file over a TCP connection. The number of unacknowledged bytes that A sends cannot exceed the size of the receive buffer.</li>
+</ol>
+<p>True</p>
+<hr>
+<ol start="4">
+<li>Suppose Host A is sending a large file to Host B over a TCP connection. If the sequence number for a segment of this connection is m, then the sequence number for the subsequent segment will necessarily be m + 1.
+如果这个连接的一个段的序列号是m，那么后续的段的序列号必然是m + 1。</li>
+</ol>
+<p>False
+序号是根据TCP数据的字节流决定的, 而不是建立在报文序列之上. 后继报文段的序号应该是m + n, 而n是最大报文段长度.</p>
+<hr>
+<ol start="5">
+<li>The TCP segment has a field in its header for rwnd.</li>
+</ol>
+<p>True</p>
+<hr>
+<ol start="6">
+<li>Suppose that the last SampleRTT in a TCP connection is equal to 1 sec. The current value of TimeoutInterval for the connection will necessarily be ≥ 1 sec.</li>
+</ol>
+<p>False
+<strong>EstimatedRTT = (1-<strong>a</strong>)<em>EstimatedRTT +<strong>a</strong></em>SampleRTT</strong>
+<strong>TimeoutInterval = EstimatedRTT + 4*DevRTT</strong></p>
+<hr>
+<ol start="7">
+<li>Suppose Host A sends one segment with sequence number 38 and 4 bytes of data over a TCP connection to Host B.  In this same segment the acknowledgment number is necessarily 42.</li>
+</ol>
+<p>False
+acknowledgment number 是 A expecting from B</p>
+<hr>
+<ol start="8">
+<li>Before sending a packet into a datagram network, the source must determine all of the links that packet will traverse between source and destination.</li>
+</ol>
+<p>False</p>
+<hr>
+<ol start="9">
+<li>How is a UDP socket fully identified? What about a TCP socket? What is the difference between the full identification of both sockets?</li>
+</ol>
+<hr>
+<ol start="10">
+<li>Describe why an application developer might choose to run an application over UDP rather than TCP.</li>
+</ol>
+<p>An application developer may not want its application to use TCP’s congestion control, which can throttle the application’s sending rate at times of congestion. Often, designers of IP telephony and IP videoconference applications choose to run their applications over UDP because they want to avoid TCP’s congestion control. Also, some applications do not need the reliable data transfer provided by TCP.
+应用程序开发人员可能不希望其应用程序使用TCP的拥塞控制，这可能会在拥塞时抑制应用程序的发送速率。通常，IP电话和IP视频会议应用程序的设计者选择在UDP上运行他们的应用程序，因为他们想避免TCP的拥塞控制。另外，有些应用程序不需要TCP提供的可靠数据传输。</p>
+<hr>
+<ol start="11">
+<li>Why is it that voice and video traffic is often sent over TCP rather than UDP in today’s Internet? (<em>Hint</em>: The answer we are looking for has nothing to do with TCP’s congestion-control mechanism.)</li>
+</ol>
+<p>Since most firewalls are configured to block UDP traffic, using TCP for video and voice traffic lets the traffic though the firewalls.
+由于大多数防火墙配置为阻断UDP流量，因此使用TCP来处理视频和语音流量可以让流量通过防火墙。</p>
+<hr>
+<ol start="12">
+<li>Is it possible for an application to enjoy reliable data transfer even when the application runs over UDP? If so, how?</li>
+</ol>
+<p>Yes. The application developer can put reliable data transfer into the application layer protocol. This would require a significant amount of work and debugging, however.
+是的。应用程序开发人员可以将可靠的数据传输放到应用层协议中。然而，这将需要大量的工作和调试。</p>
+<hr>
+<ol start="13">
+<li>Suppose a process in Host C has a UDP socket with port number 6789. Suppose both Host A and Host B each send a UDP segment to Host C with destination port number 6789. Will both of these segments be directed to the same socket at Host C? If so, how will the process at Host C know that these two segments originated from two different hosts?</li>
+</ol>
+<p>Yes, both segments will be directed to the same socket. For each received segment, at the socket interface, the operating system will provide the process with the IP addresses to determine the origins of the individual segments.
+是的，两个段将被定向到同一个套接字。对于每个接收到的段，在套接字接口上，操作系统将向进程提供IP地址，以确定各个段的起源。</p>
+<hr>
+<ol start="14">
+<li>Suppose that a Web server runs in Host C on port 80. Suppose this Web server uses persistent connections, and is currently receiving requests from two different Hosts, A and B. Are all of the requests being sent through the same socket at Host C? If they are being passed through different sockets, do both of the sockets have port 80? Discuss and explain.</li>
+</ol>
+<p>For each persistent connection, the Web server creates a separate “connection socket”. Each connection socket is identified with a four-tuple: (source IP address, source port number, destination IP address, destination port number). When host C receives and IP datagram, it examines these four fields in the datagram/segment to determine to which socket it should pass the payload of the TCP segment. Thus, the requests from A and B pass through different sockets. The identifier for both of these sockets has 80 for the destination port; however, the identifiers for these sockets have different values for source IP addresses. Unlike UDP, when the transport layer passes a TCP segment’s payload to the application process, it does not specify the source IP address, as this is implicitly specified by the socket identifier.
+对于每个持久连接，Web服务器创建一个单独的“连接套接字”。每个连接套接字用一个四元组(源IP地址、源端口号、目的IP地址、目的端口号)来标识。当主机C接收到IP数据报时，它检查数据报/段中的这四个字段，以确定应该将TCP段的有效负载传递给哪个套接字。因此，来自A和B的请求通过不同的套接字。这两个套接字的标识符的目的端口都是80;但是，这些套接字的标识符对于源IP地址有不同的值。与UDP不同，当传输层将TCP段的有效负载传递给应用程序进程时，它不指定源IP地址，因为这是由套接字标识符隐式指定的。</p>
+<hr>
+<ol start="15">
+<li>Suppose Host A sends two TCP segments back to back to Host B over a TCP connection. The first segment has sequence number 90; the second has sequence number 110.
+<ul>
+<li>How much data is in the first segment?</li>
+<li>Suppose that the first segment is lost but the second segment arrives at B. In the acknowledgment that Host B sends to Host A, what will be the acknowledgment number?</li>
+</ul>
+</li>
+</ol>
+<p>a) Consider sequence numbers,
+First segment=90	 		Second segment=110
+Data in the first segment= 110-90 =20
+b) Consider the first segment is lost but the second segment arrives at B. In the acknowledgment that Host B sends to Host A, then the acknowledgment number will be first segment of sequence number, that is 90.</p>
+<hr>
+<ol start="16">
+<li>Consider the Telnet example discussed in Section 3.5. A few seconds after the user types the letter ‘C,’ the user types the letter ‘R.’ After typing the letter ‘R,’ how many segments are sent, and what is put in the sequence number and acknowledgment fields of the segments?
+<img loading="lazy" src="https://pic.freanja.cn/images/2021/09/22/202109230302171.png" alt="截屏2021-07-02 上午5.45.36"  />
+</li>
+</ol>
+<p>当主机A发送数据= ' R &lsquo;时，则以序列号= 43和确认号= 80的分段发送给主机B。
+然后主机B发送数据= ' R ' (echoesback ' R &lsquo;)，序列号= 80，确认号= 44的段作为收据。
+然后，主机A通过发送序列号为44、确认号为81的分段以及任何其他数据(如果有的话)来确认收到回显的&rsquo; R &lsquo;。</p>
+<p><img loading="lazy" src="https://pic.freanja.cn/images/2021/09/22/202109230302431.png" alt="415583F7-86F2-49C7-B627-B43F730B587D"  />
+</p>
+<h3 id="piggyback">Piggyback<a hidden class="anchor" aria-hidden="true" href="#piggyback">#</a></h3>
+<p>Note that the acknowledgment for client-to-server data is carried in a segment carrying server-to-client data; this acknowledgment is said to be <strong>piggybacked</strong>on the server-to-client data segment.</p>
+<h3 id="acknowledgement">Acknowledgement<a hidden class="anchor" aria-hidden="true" href="#acknowledgement">#</a></h3>
+<h3 id="mss">MSS<a hidden class="anchor" aria-hidden="true" href="#mss">#</a></h3>
+<p>The maximum amount of data that can be grabbed and placed in a segment is limited by the <strong>maximum segment size (MSS)</strong>
+可以在一个段中抓取和放置的最大数据量受**最大段大小(MSS)**的限制</p>
+<h1 id="chap-4-network-layer-data-plane">Chap 4 Network Layer: Data Plane<a hidden class="anchor" aria-hidden="true" href="#chap-4-network-layer-data-plane">#</a></h1>
+<hr>
+<ol>
+<li>Let’s review some of the terminology used in this textbook. Recall that the name of a transport-layer packet is <em>segment</em>and that the name of a link-layer packet is <em>frame</em>. What is the name of a network-layer packet? Recall that both routers and link-layer switches are called <em>packet switches</em>. What is the fundamental difference between a router and link-layer switch?
+让我们回顾一下这本教科书中使用的一些术语。回想一下传输层包是段，链路层包的名称是帧。网络层包的名称是什么?回想一下，路由器和链路层交换机都被调用分组交换机。路由器和链路层交换机的基本区别是什么?</li>
+</ol>
+<p>A network-layer packet is a datagram. A router forwards a packet based on the packet’s IP (layer 3) address. A link-layer switch forwards a packet based on the packet’s MAC (layer 2) address.
+网络层数据包是数据报。路由器根据包的IP(第三层)地址转发包。链路层交换机根据数据包的MAC地址(第二层)转发数据包。</p>
+<hr>
+<ol start="2">
+<li>We noted that network layer functionality can be broadly divided into data plane functionality and control plane functionality. What are the main functions of the data plane? Of the control plane?
+我们注意到，网络层的功能可以大致分为数据平面功能和控制平面功能。数据平面的主要功能是什么?控制平面的?</li>
+</ol>
+<p>The main function of the data plane is packet forwarding, which is to forward datagrams from their input links to their output links. For example, the data plane’s input ports perform physical layer function of terminating an incoming physical link at a router, perform link-layer function to interoperate with the link layer at the other side of the incoming link, and perform lookup function at the input ports.
+数据平面的主要功能是包转发，即将数据报从输入链路转发到输出链路。例如，数据平面的输入端口执行物理层功能，即在路由器上终止传入的物理链路，执行链路层功能以与传入链路另一端的链路层互操作，并在输入端口执行查找功能。
+The main function of the control plane is routing, which is to determine the paths a packet takes from its source to its destination. A control plane is responsible for executing routing protocols, responding to attached links that go up or down, communicating with remote controllers, and performing management functions.
+控制平面的主要功能是路由，即确定数据包从源到目的地的路径。控制平面负责执行路由协议，响应上行或下行的附加链路，与远程控制器通信，执行管理功能。</p>
+<hr>
+<ol start="3">
+<li>We made a distinction between the forwarding function and the routing function performed in the network layer. What are the key differences between routing and forwarding?
+我们对网络层中执行的转发功能和路由功能进行了区分。路由和转发的主要区别是什么?</li>
+</ol>
+<p>The key differences between routing and forwarding is that forwarding is a router’s local action of transferring packets from its input interfaces to its output interfaces, and forwarding takes place at very short timescales (typically a few nanoseconds), and thus is typically implemented in hardware. Routing refers to the network-wide process that determines the end-to-end paths that packets take from sources to destinations. Routing takes place on much longer timescales (typically seconds), and is often implemented in software.
+路由和转发的关键区别在于，转发是路由器将数据包从输入接口传输到输出接口的本地动作，而转发发生在非常短的时间内(通常只有几纳秒)，因此通常是在硬件中实现的。路由是指确定信息包从源到目的地的端到端路径的网络范围的过程。路由发生在更长的时间尺度上(通常是秒)，并且通常是在软件中实现的。</p>
+<hr>
+<ol start="4">
+<li>What is the role of the forwarding table within a router?
+转发表在路由器中的作用是什么?</li>
+</ol>
+<p>The role of the forwarding table within a router is to hold entries to determine the outgoing link interface to which an arriving packet will be forwarded via switching fabric.
+转发表在路由器中的作用是保存表项，以确定到达的数据包将通过交换结构转发到哪个出接口。</p>
+<hr>
+<ol start="5">
+<li>We said that a network layer’s service model “defines the characteristics of end-to-end transport of packets between sending and receiving hosts.” What is the service model of the Internet’s network layer? What guarantees are made by the Internet’s service model regarding the host-to-host delivery of datagrams?
+我们说过，网络层的服务模型“定义了发送主机和接收主机之间的包的端到端传输的特征”。因特网的网络层的服务模型是什么?关于主机到主机的数据报传送，因特网的服务模型提供了什么保证?</li>
+</ol>
+<p>The service model of the Internet’s network layer is best-effort service. With this service model, there is no guarantee that packets will be received in the order in which they were sent, no guarantee of their eventual delivery, no guarantee on the end-to-end delay, and no minimal bandwidth guarantee.
+因特网网络层的服务模型是尽力而为服务。使用这种服务模型，不能保证数据包将按照它们发送的顺序接收，不能保证它们的最终交付，不能保证端到端延迟，也不能保证最小带宽。</p>
+<hr>
+<ol start="6">
+<li>What does each input port of a high speed router store to facilitate fast for- warding decisions?
+一个高速路由器的每个输入端口存储什么以方便快速的防止决定?</li>
+</ol>
+<hr>
+<ol start="7">
+<li>Suppose that an arriving packet matches two or more entries in a router’s forwarding table. With traditional destination-based forwarding, what rule does a router apply to determine which of these rules should be applied to determine the output port to which the arriving packet should be switched?
+假设一个到达的数据包与路由器转发表中的两个或多个表项相匹配。对于传统的基于目的地的转发，路由器应该应用什么规则来确定应该应用这些规则中的哪一个来确定到达的数据包应该被交换到的输出端口?</li>
+</ol>
+<p>A router uses longest prefix matching to determine which link interface a packet will be forwarded to if the packet’s destination address matches two or more entries in the forwarding table. That is, the packet will be forwarded to the link interface that has the longest prefix match with the packet’s destination.
+如果报文的目的地址与转发表中的两个或两个以上的表项相匹配，路由器使用最长前缀匹配来确定报文将被转发到哪个链路接口。即报文将被转发到与报文目的地址前缀匹配最长的链路接口。</p>
+<hr>
+<ol start="8">
+<li>Suppose Host A sends Host B a TCP segment encapsulated in an IP data- gram. When Host B receives the datagram, how does the network layer in Host B know it should pass the segment (that is, the payload of the datagram) to TCP rather than to UDP or to some other upper-layer protocol?
+假设主机A向主机B发送一个封装在IP数据报中的TCP段。当主机B接收到数据报时，主机B中的网络层如何知道它应该将段(即数据报的有效负载)传递给TCP而不是UDP或其他一些上层协议?</li>
+</ol>
+<p>The 8-bit protocol field in the IP datagram contains information about which transport layer protocol the destination host should pass the segment to.
+IP数据报中的8位协议字段包含关于目的地主机应该将段传递到哪个传输层协议的信息。</p>
+<hr>
+<ol start="9">
+<li>What field in the IP header can be used to ensure that a packet is forwarded through no more than <em>N</em>routers?
+在IP报头中有哪些字段可以用来保证一个报文转发不超过<em>N</em>路由器?</li>
+</ol>
+<p>Time-to-live.
+生存时间</p>
+<hr>
+<ol start="10">
+<li>Recall that we saw the Internet checksum being used in both transport-layer segment (in UDP and TCP headers, Figures 3.7 and 3.29 respectively) and in network-layer datagrams (IP header, Figure 4.16). Now consider a transport layer segment encapsulated in an IP datagram. Are the checksums in the segment header and datagram header computed over any common bytes in the IP datagram? Explain your answer.
+回想一下，我们在传输层段(分别在UDP和TCP报头中，图3.7和3.29)和网络层数据报(IP报头，图4.16)中都使用了Internet校验和。现在考虑一个封装在IP数据报中的传输层段。段报头和数据报报头中的校验和是否在IP数据报中的任何公共字节上计算?解释你的答案。</li>
+</ol>
+<p>No. IP header checksum only computes the checksum of an IP packet’s IP header fields, which share no common bytes with the IP datagram’s transport-layer segment part.
+不。IP报头校验和只计算IP包的IP报头字段的校验和，这些字段与IP数据报的传输层段部分不共享公共字节。</p>
+<hr>
+<ol start="11">
+<li>When a large datagram is fragmented into multiple smaller datagrams, where are these smaller datagrams reassembled into a single larger datagram?
+当一个大数据报被分割成多个较小的数据报时，这些较小的数据报在哪里重新组装成一个较大的数据报呢?</li>
+</ol>
+<p>The reassembly of the fragments of an IP datagram is done in the datagram’s destination host.
+IP数据报的片段的重组是在数据报的目标主机中完成的。</p>
+<hr>
+<ol start="12">
+<li>A router has eight interfaces. How many IP addresses will it have?
+路由器有8个接口。它将有多少IP地址?</li>
+</ol>
+<hr>
+<ol start="13">
+<li>What is the 32-bit binary equivalent of the IP address 223.1.3.27 ?
+与IP地址223.1.3.27对应的32位二进制文件是什么?</li>
+</ol>
+<p>11011111 00000001 00000011 00011100.</p>
+<hr>
+<ol start="14">
+<li>Suppose there are four routers between a source host and a destination host. Ignoring fragmentation, an IP datagram sent from the source host to the destination host will travel over how many interfaces? How many forward- ing tables will be indexed to move the datagram from the source to the destination?
+假设在一个源主机和一个目标主机之间有四个路由器。如果忽略分片，从源主机发送到目标主机的IP数据报将经过多少个接口?将索引多少个转发表以将数据报从源移动到目的地?</li>
+</ol>
+<p>8 interfaces; 3 forwarding tables.</p>
+<hr>
+<ol start="15">
+<li>Suppose an application generates chunks of 40 bytes of data every 20 msec, and each chunk gets encapsulated in a TCP segment and then an IP datagram. What percentage of each datagram will be overhead, and what percentage will be application data?
+假设一个应用程序每20 msec生成40字节的数据块，每个数据块封装在一个TCP段中，然后封装在一个IP数据报中。每个数据报的开销占多大百分比，应用程序数据占多大百分比?</li>
+</ol>
+<p>50% overhead.</p>
+<hr>
+<ol start="16">
+<li>What is a private network address? Should a datagram with a private network address ever be present in the larger public Internet? Explain.
+什么是私网地址?具有专用网络地址的数据报是否应该出现在更大的公共互联网中?解释一下。</li>
+</ol>
+<p>A private network address of a device in a network refers to a network address that is only meaningful to those devices within that network. A datagram with a private network address should never be present in the larger public Internet, because the private network address is potentially used by many network devices within their own private networks.
+网络中设备的专用网络地址指的是仅对该网络中的设备有意义的网络地址。具有专用网络地址的数据报永远不应该出现在更大的公共Internet中，因为专用网络地址可能被它们自己的专用网络中的许多网络设备使用。</p>
+<hr>
+<h1 id="chap-5-network-layer-control-plane">Chap 5 Network Layer: Control Plane<a hidden class="anchor" aria-hidden="true" href="#chap-5-network-layer-control-plane">#</a></h1>
+<hr>
+<ol>
+<li>True or false: When an OSPF route sends its link state information, it is sent only to those nodes directly attached neighbors. Explain.
+OSPF路由发送链路状态信息时，只发送给与它直接相连的邻居。解释一下。</li>
+</ol>
+<h3 id="ospf-open-shortest-path-first-">OSPF（ Open Shortest Path First ）<a hidden class="anchor" aria-hidden="true" href="#ospf-open-shortest-path-first-">#</a></h3>
+<p>False
+With OSPF, a router broadcasts its link-state information to all other routers in the autonomous system to which it belongs, not just to its neighboring routers. This is because with OSPF, each router needs to construct a complete topological map of the entire AS and then locally runs Dijkstra’s shortest-path algorithm to determine its least- cost paths to all other nodes in the same AS.
+OSPF要广播链路信息，每台路由器都需要构造一个完整的整个自治系统的拓扑图。</p>
+<hr>
+<ol start="2">
+<li>True or false: When a BGP router receives an advertised path from its neighbor, it must add its own identity to the received path and then send that new path on to all of its neighbors. Explain.
+当BGP路由器接收到邻居发布的路径时，它必须在接收到的路径上添加自己的身份，然后将新的路径发送给所有邻居。解释一下。</li>
+</ol>
+<h3 id="bgp--border-gateway-protocol-边界网关协议">BGP （ Border Gateway Protocol ）边界网关协议<a hidden class="anchor" aria-hidden="true" href="#bgp--border-gateway-protocol-边界网关协议">#</a></h3>
+<p>False.
+A BGP router can choose not to add its own identity to the received path and then send that new path on to all of its neighbors, as BGP is a policy-based routing protocol. This can happen in the following scenario.
+The destination of the received path is some other AS, instead of the BGP router’s AS, and the BGP router does not want to work as a transit router.
+BGP可以选择不添加信息（当不希望作为中转路由器工作时）</p>
+<hr>
+<ol start="3">
+<li>What is meant by a control plane that is based on per-router control? In such cases, when we say the network control and data planes are implemented “monolithically,” what do we mean?
+基于每个路由器控制的控制平面是什么意思?在这种情况下，当我们说网络控制和数据平面是“单一的”实现时，我们的意思是什么?</li>
+</ol>
+<p>Per-router control means that a routing algorithm runs in each and every router; both forwarding and routing function are constrained within each router. Each router has a routing component that communicates with the routing components in other routers to compute the values for its forwarding table. In such cases, we say that the network control and data planes are implemented monolithically because each router works as an independent entity that implements its own control and data planes.
+每个路由器控制意味着路由算法在每个路由器上运行;在每个路由器中，转发和路由功能都受到限制。每个路由器都有一个路由组件，该组件与其他路由器中的路由组件通信，以计算其转发表的值。在这种情况下，我们说网络控制和数据平面是单个实现的，因为每个路由器都作为一个独立的实体来实现自己的控制和数据平面。</p>
+<hr>
+<ol start="4">
+<li>What is meant by a control plane that is based on logically centralized control? In such cases, are the data plane and the control plane implemented within the same device or in separate devices? Explain.
+基于逻辑集中控制的控制平面是什么意思?在这种情况下，数据平面和控制平面是在同一个设备中实现还是在单独的设备中实现?解释一下。</li>
+</ol>
+<p>Logically centralized control means that a logically central routing controller computes and distributes the forwarding tables to be used by each and every router, and each router does not compute its forwarding table, unlike the per-router control. In the case of logically centralized control, the data plane and control plane are implemented in separate devices; the control plane is implemented in a central server or multiple servers, and the data plane is implemented in each router.
+逻辑集中控制是指一个逻辑上集中的路由控制器计算并分配每个路由器使用的转发表，而每个路由器不计算它的转发表，这与per-router控制不同。在逻辑集中控制的情况下，数据面和控制面分别在不同的设备上实现;控制平面在一台或多台服务器中实现，数据平面在每台路由器中实现。</p>
+<hr>
+<h1 id="chap-6-the-link-layer-and-lans">Chap 6 The Link Layer and LANs<a hidden class="anchor" aria-hidden="true" href="#chap-6-the-link-layer-and-lans">#</a></h1>
+<hr>
+<ol>
+<li>What is framing in link layer?
+链接层中的框架是什么?</li>
+</ol>
+<hr>
+<ol start="2">
+<li>If all the links in the Internet were to provide reliable delivery service, would the TCP reliable delivery service be redundant? Why or why not?
+如果Internet上的所有链路都提供可靠的交付服务，TCP的可靠交付服务会是冗余的吗?为什么或为什么不?</li>
+</ol>
+<p>Although each link guarantees that an IP datagram sent over the link will be received at the other end of the link without errors, it is not guaranteed that IP datagrams will arrive at the ultimate destination in the proper order. With IP, datagrams in the same TCP connection can take different routes in the network, and therefore arrive out of order. TCP is still needed to provide the receiving end of the application the byte stream in the correct order. Also, IP can lose packets due to routing loops or equipment failures.
+尽管每个链路都保证了在链路上发送的IP数据报将在链路的另一端没有错误地接收到，但它不能保证IP数据报将以正确的顺序到达最终目的地。使用IP，同一TCP连接中的数据报在网络中可以通过不同的路由到达，因此到达的顺序是不一致的。TCP仍然需要以正确的顺序向应用程序的接收端提供字节流。此外，由于路由环路或设备故障，IP可能会丢失数据包。</p>
+<hr>
+<ol start="3">
+<li>Name three error-detection strategies employed by link layer.
+链路层使用的三种错误检测策略。</li>
+</ol>
+<hr>
+<ol start="4">
+<li>Suppose two nodes start to transmit at the same time a packet of length <em>L</em>over a broadcast channel of rate <em>R</em>. Denote the propagation delay between the two nodes as <em>d</em>prop. Will there be a collision if <em>d</em>prop 6 <em>L</em>/<em>R</em>? Why or why not?
+假设两个节点在速率为r的广播信道上同时开始传输长度为L的数据包，表示两个节点之间的传播延迟为dprop。如果dprop&lt;L/R会有碰撞吗?为什么或为什么不?</li>
+</ol>
+<p>There will be a collision in the sense that while a node is transmitting it will start to receive a packet from the other node.
+当一个节点在传输时，它将开始从另一个节点接收数据包，这样就会产生冲突。</p>
+<hr>
+<ol start="5">
+<li>How big is the MAC address space? The IPv4 address space? The IPv6 address space?
+MAC地址空间有多大?IPv4地址空间?IPv6地址空间?</li>
+</ol>
+<p>2^48 MAC addresses; 2^32 IPv4 addresses; 2^128 IPv6 addresses.</p>
+<hr>
+<ol start="6">
+<li>Suppose nodes A, B, and C each attach to the same broadcast LAN (through their adapters). If A sends thousands of IP datagrams to B with each encapsulating frame addressed to the MAC address of B, will C’s adapter process these frames? If so, will C’s adapter pass the IP datagrams in these frames to the network layer C? How would your answers change if A sends frames with the MAC broadcast address?
+假设节点A、B和C都连接到同一个广播局域网(通过它们的适配器)。如果A发送数千个IP数据报给B，每个封装帧都被编址到B的MAC地址，C的适配器会处理这些帧吗?如果是，C的适配器将这些帧中的IP数据报传递到网络层C吗?如果A用MAC广播地址发送帧，你的答案会如何变化?</li>
+</ol>
+<p>C’s adapter will process the frames, but the adapter will not pass the datagrams up the protocol stack. If the LAN broadcast address is used, then C’s adapter will both process the frames and pass the datagrams up the protocol stack.
+C的适配器将处理帧，但适配器不会将数据报向上传递到协议栈。如果使用了局域网广播地址，那么C的适配器将处理帧并将数据报向上传递到协议栈。</p>
+<hr>
+<ol start="7">
+<li>Why is an ARP query sent within a broadcast frame? Why is an ARP response sent within a frame with a specific destination MAC address?
+为什么ARP查询在广播帧内发送?为什么ARP响应在特定目的MAC地址的帧内发送?</li>
+</ol>
+<p>An ARP query is sent in a broadcast frame because the querying host does not which adapter address corresponds to the IP address in question. For the response, the sending node knows the adapter address to which the response should be sent, so there is no need to send a broadcast frame (which would have to be processed by all the other nodes on the LAN).
+ARP查询是在广播帧中发送的，因为查询主机不知道哪个适配器地址对应的IP地址。对于响应，发送节点知道响应应该发送到的适配器地址，因此不需要发送广播帧(该帧必须由LAN上的所有其他节点处理)。</p>
+<hr>
+<ol start="8">
+<li>For the network in Figure6.19, the router has two ARP modules, each with its own ARP table. Is it possible that the same MAC address appears in both tables?
+对于图6.19中的网络，路由器有两个ARP模块，每个模块都有自己的ARP表。是否可能在两个表中出现相同的MAC地址?</li>
+</ol>
+<p>No it is not possible. Each LAN has its own distinct set of adapters attached to it, with each adapter having a unique LAN address.
+不，这不可能。每个局域网都有自己独特的适配器集，每个适配器都有一个独特的局域网地址。</p>
+<hr>
+<ol start="9">
+<li>What is a hub used for?</li>
+</ol>
+<hr>
+<ol start="10">
+<li>Consider Figure 6.15. How many subnetworks are there, in the addressing sense of Section 4.3?
+考虑图6.15。在第4.3节的寻址意义上，有多少个子网?</li>
+</ol>
+<p>2 (the internal subnet and the external internet)
+2(内部子网和外部互联网)</p>
+<hr>
+<ol start="11">
+<li>Each host and router has an ARP table in its memory. What are the contents of this table?</li>
+</ol>
+<hr>
+<h1 id="calculation-and-analysis">Calculation and Analysis<a hidden class="anchor" aria-hidden="true" href="#calculation-and-analysis">#</a></h1>
+<hr>
+<p>假设用户共享一条3mbps的链路。再假设每个用户在传输时需要150 kbps，但是每个用户只传输10%的时间。(参见第1.3节中分组交换与电路交换的讨论。)
+a.使用电路切换时，支持多少用户?
+b.对于这个问题的其余部分，假设使用了分组交换。找出给定用户进行传输的概率。
+c.假设有120个用户。求任意给定时刻，恰好有n个用户同时进行传输的概率。(提示:使用二项分布。)
+d.求同时有21个以上用户在传输的概率。</p>
+<p>在包括因特网在内的现代分组交换网络中，源主机将长应用层消息(例如，一个图像或一个音乐文件)分段成更小的分组，并将这些分组发送到网络中。然后，接收方将数据包重新组装成原始消息。我们将此过程为消息分段。
+图1.27演示了带有和不带有消息分段的消息的端到端传输。考虑图1.27中从源发送到目的地的长度为8 # 106位的消息。假设图中每条链路为2mbps。忽略传播、队列和处理延迟。
+a.考虑在不分段的情况下将消息从源发送到目的地。将消息从源主机移动到第一个包交换机需要多长时间?请记住，每个交换机使用存储和转发分组交换，将消息从源主机移动到目标主机的总时间是多少?
+b.现在假设消息被分成800个数据包，每个数据包有10000位长。将第一个包从源主机移动到第一个交换机需要多长时间?当第一个数据包从第一个交换机发送到第二个交换机时，第二个数据包从源主机发送到第一个交换机。在第一个交换机上什么时候会完全接收到第二个数据包?
+c.使用消息分段时，将文件从源主机移动到目标主机需要多长时间?将这一结果与你(a)部分的答案进行比较并评论。
+d.除了减少延迟之外，使用消息分段的原因是什么?
+e.讨论消息分段的缺点。</p>
+<p>考虑以下ASCII字符串，当浏览器发送一个HTTP GET消息时，Wireshark捕获了这些字符(即，这是一个HTTP GET消息的实际内容)。字符<!-- raw HTML omitted --><!-- raw HTML omitted -->是回车和换行字符(也就是说，下面文本中的斜体字字符串<!-- raw HTML omitted -->表示HTTP报头中此时包含的单个回车字符)。回答以下问题，指示您在下面的HTTP GET消息中找到答案的位置。</p>
+<p>考虑发送方窗口大小为4、序列号范围为1024的GBN协议。假设在时间t时，接收方期望的下一个有序包的序列号为k。假设媒体不重新对消息进行排序。请回答以下问题:
+a.在时间t时，发送方窗口内可能存在的序列号集合是什么?证明你的答案。
+b.在时间t时，在所有可能的消息中，ACK字段的所有可能值是什么?证明你的答案。</p>
+<p>这里我们有一个窗口大小N=3。假设接收方收到了数据包k-1，并对该数据包和之前所有其他数据包进行了ack。如果所有这些ACK都已被发送方接收，那么发送方的窗口是[k, k+N-1]。接下来，假设发送方没有收到任何ack。在第二种情况下，发送方的窗口包含k-1和k-1以内(包括k-1)的N个包。因此发送方的窗口是[k-N,k-1]。通过这些参数，发送者窗口的大小为3，开始于[k- n,k]范围内的某个地方。
+b)如果接收方在等待报文k，则接收到(并进行了ack)的报文k-1和之前的报文N-1。如果发送方尚未接收到这些N个ACK，则值为[k-N,k-1]的ACK消息可能仍在往回传播。因为发送方已经发送了数据包[k-N, k-1]，所以必须是发送方已经收到了k-N-1的ACK。一旦接收端发送了一个k-N-1的ACK，它将永远不会发送小于k-N-1的ACK。因此，飞行中ACK值的范围可以从k-N-1到k-1。</p>
+<p>考虑将一个L字节的大文件从主机A传输到主机b，假设MSS为536字节。
+a.不耗尽TCP序列号的最大L值是多少?回想一下TCP序列号字段有4个字节。
+b.对于在(a)中获得的L，找出传输文件需要的时间。假设总共有66字节的传输、网络和数据链路头被添加到每个段，然后产生的包通过155 Mbps的链路发送出去。忽略流量控制和拥塞控制，使A可以连续地泵出段。</p>
+<p>有232 = 4,294,967,296可能的序列号。
+a)序号不会随着每段递增1。相反,它
+按发送数据的字节数递增。因此MSS的大小无关紧要——从A发送到B的最大文件大小仅仅是字节数
+可表示为232»4.19 gb。
+b)段数isê536ú。66个字节的头被添加到每个
+段给出了总计528,857,934字节的头。传输的总字节数为232 + 528,857,934 = 4.824́109字节。
+因此，在155~Mbps的链路上传输文件需要249秒。</p>
+<p>主机A和B通过TCP连接进行通信，主机B已经从A接收到126字节以上的所有字节。假设主机A向主机B背靠背发送两个网段。第一个和第二个段分别包含80和40字节的数据。其中第一个报文段序号为127，源端口号为302，目的端口号为80。每当主机B从主机a接收到一个段时，它都会发送一个确认。
+a.主机a发送给B的第二段，序列号- ber、源端口号、目的端口号分别是什么?
+b.如果第一个报文段在第二个报文段之前到达，在第一个报文段的确认中，确认号、源端口号和目的端口号分别是什么?
+c.如果第二段在第一段之前到达，在第一段到达的确认中，确认号是多少?
+d.假设A发送的两个片段顺序到达b。第一个确认丢失，第二个确认在第一个超时间隔之后到达。画一个时间表，显示这些段和所有其他段和确认发送。(假设没有额外的丢包。)对于图中的每个段，提供序列号和数据的字节数;对于您添加的每一个确认，请提供确认号码。</p>
+<p>a)主机a到主机B的第二段，序号为207，源端口号为302，目的端口号为80。
+b)如果第一个报文段在第二个报文段之前到达，则第一个报文段的确认号为207，源端口号为80，目的端口号为302。
+c)如果第二个段在第一个段之前到达，在第一个到达的段的确认中，确认号是127，表示它仍然在等待127字节及以后的字节。</p>
+<p>第29页。第3.5.6节讨论了SYN cookie
+a.为什么服务器需要在SYNACK中使用特殊的初始序列号?
+b.假设攻击者知道目标主机使用SYN cookie。攻击者能否通过简单地向目标发送一个ACK包来创建半开或完全打开的连接?为什么或为什么不?
+假设攻击者收集了大量服务器发送的初始序列号。攻击者是否可以通过发送带有这些初始序列号的ack来导致服务器创建许多完全打开的连接?为什么?</p>
+<p>a)服务器使用特殊的初始序列号(从源ip、目的ip和端口的哈希值中获取)来防御SYN FLOOD攻击。
+b)不能，攻击者不能通过简单的发送和ACK报文来创建半开或完全开的连接。半开放的连接是不可能的，因为在建立完整连接之前，使用SYN cookie的服务器不会为任何连接维护连接变量和缓冲区。为了建立完全开放的连接，攻击者应该知道与攻击者(欺骗的)源IP地址对应的特殊初始序列号。这个序列号需要每个服务器使用的“秘密”编号。由于攻击者不知道这个秘密数字，她无法猜测初始序列号。
+c)不，服务器可以简单地在计算这些初始序列号时添加一个时间戳，并为这些序列号选择一个存活时间，并丢弃过期的初始序列号，即使攻击者重放它们。</p>
+<p>在3.5.4节中，我们看到TCP在执行快速重传之前一直等待，直到它收到三个重复的ack。为什么你认为TCP设计者选择不执行一个段的第一个重复ACK后的快速重传?</p>
+<p>假设发送了数据包n、n+1和n+2，并接收了数据包n并进行了ack。如果数据包n + 1, n + 2沿着end-to-end-path会重新排序(例如,收到的顺序n + 2, n + 1)的收据包n + 2将生成一个重复的ack n和将引发重传下的政策只有等待第二个重复ack重传。通过等待三重重复的ACK，它必须是两个第n包后的报文正确收到，而第n+1包未收到。三重重复ACK方案的设计者可能认为等待两个包(而不是1个)是在需要时触发快速重传之间的正确权衡，而不是在面对包重新排序时过早重传。</p>
+<p>在这个问题中，我们研究UDP或TCP是否提供了某种程度的端点身份验证。
+a.考虑一个服务器接收一个UDP报文中的请求，并响应该请求的UDP报文(例如，由DNS服务器所做)。如果一个IP地址为X的客户机用地址Y来欺骗它的地址，那么服务器将在哪里发送它的响应?
+b.假设服务器收到源地址为Y的SYN报文，通过SYNACK响应后，收到确认号正确的源地址为Y的ACK报文。假设服务器选择一个随机的初始序列号，并且没有“中间人”，服务器能确定客户端确实在Y(而不是欺骗Y的其他地址X)吗?</p>
+<p>a)服务器将响应发送给Y。
+b)服务器可以确定客户端确实在Y。如果它在其他地址欺骗Y，则SYNACK将被发送到地址Y，并且该主机中的TCP不会发送回TCP ACK段。即使攻击者发送一个适当时间的TCP ACK段，它也不知道正确的服务器序列号(因为服务器使用随机的初始序列号)。</p>
+<p>考虑一个使用32位主机地址的数据报网络。假设一台路由器有4条链路，编号从0到3，报文按如下方式发送到链路接口:</p>
+<p>a.提供5个表项的转发表，使用最长前缀匹配，将报文转发到正确的链路接口。
+b.描述转发表如何为带有目的地址的数据报确定适当的链路接口:
+第一个地址的前缀匹配为第5个表项:link接口3第二个地址的前缀匹配为第3个表项:link接口2
+第三个地址的前缀匹配是第4
+Entry: link interface 3</p>
+<p>考虑一个使用8位主机地址的数据报网络。假设一台路由器使用最长前缀匹配，并且有如下转发表:
+对于这四个接口中的每个接口，给出与之关联的目的主机地址范围和范围内的地址数量。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+<nav class="paginav">
+  <a class="prev" href="https://github.com/FreanJa/freanja.github.io/post/blog/">
+    <span class="title">« Prev Page</span>
+    <br>
+    <span>C&#43;&#43;核心编程</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2021 <a href="https://github.com/FreanJa/freanja.github.io/">FreanJa&#39;s Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
